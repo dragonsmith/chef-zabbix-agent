@@ -1,0 +1,18 @@
+#
+# Configuration for Zabbix-agent
+# This file is managed by Chef. All changes will be overwritten.
+#
+Server=<%= @server_name %>
+#
+Hostname=<%= @node['fqdn'] %>
+#
+StartAgents=3
+RefreshActiveChecks=60
+DebugLevel=<%= @debuglevel %>
+PidFile=<%= @pidfile %>
+LogFile=<%= @logfile %>
+LogFileSize=10
+Timeout=3
+ListenIP=<%= @listen %>
+
+Include=<%= @include_dir %>
