@@ -2,7 +2,7 @@ maintainer        "Kirill Kouznetsov"
 maintainer_email  "agon.smith@gmail.com"
 license           "Apache 2.0"
 description       "Installs and configures zabbix agent"
-version           "1.1.0"
+version           "1.1.1"
 
 recipe            "zabbix-agent", "Installs and configures zabbix agent"
 
