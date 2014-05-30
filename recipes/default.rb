@@ -55,6 +55,12 @@ end
   end
 end
 
+group "shadow" do
+  action :modify
+  members ['zabbix']
+  append true
+end
+
 service node['zabbix']['service'] do
   pattern  "zabbix_agentd"
   supports [ :restart => true ]
