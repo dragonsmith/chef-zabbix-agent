@@ -3,6 +3,14 @@
 # Recipe:: default
 #
 
+apt_repository "zabbix" do
+  uri "http://repo.zabbix.com/zabbix/2.2/#{node['platform']}/"
+  distribution node['lsb']['codename']
+  components ["main"]
+  key "http://repo.zabbix.com/zabbix-official-repo.key"
+  not_if { platform?("ubuntu") and node['lsb']['release'].to_i >= 14 }
+end
+
 package node['zabbix']['package'] do
   action :install
 end
