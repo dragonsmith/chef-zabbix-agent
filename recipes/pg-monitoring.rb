@@ -7,6 +7,12 @@
 # Copyright 2014, Kirill Kouznetsov
 #
 
+service node['zabbix']['service'] do
+  pattern  'zabbix_agentd'
+  supports [restart: true]
+  action   :nothing
+end
+
 file '/etc/zabbix/agent-conf.d/postgresql.conf' do
   owner 'root'
   group 'root'
