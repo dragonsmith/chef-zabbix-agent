@@ -67,24 +67,6 @@ service node['zabbix']['service'] do
   action   [:enable, :start]
 end
 
-file '/etc/zabbix/agent-conf.d/iostat.conf' do
-  content %Q(UserParameter=dev.iostat[*],/usr/bin/sudo /usr/bin/iostat -x | /usr/bin/awk '/^$1 /{print $$$2}')
-  owner 'root'
-  group 'root'
-  mode 0644
-  notifies :restart, "service[#{node['zabbix']['service']}]", :delayed
-end
-
-begin
-  sudo 'zabbix-iostat' do
-    user 'zabbix'
-    commands ['/usr/bin/iostat -x']
-    nopasswd true
-  end
-rescue NameError => e
-  Chef::Log.info(e.message)
-  Chef::Log.info('LWRP for sudo is not defined. Skipping resource sudo[zabbix-iostat] ...')
-end
 
 include_recipe 'zabbix-agent::mdraid' if ::File.exist?('/proc/mdstat')
 
