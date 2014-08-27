@@ -10,3 +10,6 @@ recipe            'zabbix-agent', 'Installs and configures zabbix agent'
 %w( ubuntu debian ).each do |os|
   supports os
 end
+
+depends 'apt'
+depends 'sudo'
