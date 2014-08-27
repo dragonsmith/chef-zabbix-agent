@@ -67,6 +67,7 @@ service node['zabbix']['service'] do
   action   [:enable, :start]
 end
 
+include_recipe 'zabbix-agent::proc-mem-rss'
 
 include_recipe 'zabbix-agent::mdraid' if ::File.exist?('/proc/mdstat')
 
