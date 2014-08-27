@@ -17,7 +17,7 @@ file '/etc/zabbix/agent-conf.d/postgresql.conf' do
   owner 'root'
   group 'root'
   mode 0644
-  notifies :restart, 'service[zabbix-agent]'
+  notifies :restart, 'service[zabbix-agent]', :delayed
   content <<-EOF
 UserParameter=psql.max_connections[*],/usr/bin/sudo -u postgres /usr/bin/psql -qtp $1 -c 'show max_connections'
 UserParameter=psql.current_connections[*],/usr/bin/sudo -u postgres /usr/bin/psql -qtp $1 -c 'SELECT SUM(numbackends) FROM pg_stat_database'
