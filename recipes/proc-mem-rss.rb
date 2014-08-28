@@ -37,5 +37,5 @@ file '/etc/zabbix/agent-conf.d/proc-mem-rss.conf' do
   group 'root'
   mode 0644
   notifies :restart, 'service[zabbix-agent]', :delayed
-  content 'UserParameter=proc.mem.rss[*],/bin/ps -o rss --no-heading $(/usr/bin/pgrep -of "$1")'
+  content 'UserParameter=proc.mem.rss[*],/usr/bin/expr $$(/bin/ps -o rss --no-heading $$(/usr/bin/pgrep -of $$(echo $1 | sed "s/ \+/.*/g" ) )) \* 1024'
 end

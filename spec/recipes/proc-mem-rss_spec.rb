@@ -8,7 +8,7 @@ describe 'zabbix-agent::proc-mem-rss' do
   it { expect(zabbix_service).to do_nothing }
 
   it do
-    is_expected.to render_file('/etc/zabbix/agent-conf.d/proc-mem-rss.conf').with_content('UserParameter=proc.mem.rss[*],/bin/ps -o rss --no-heading $(/usr/bin/pgrep -of "$1")')
+    is_expected.to render_file('/etc/zabbix/agent-conf.d/proc-mem-rss.conf').with_content('UserParameter=proc.mem.rss[*],/usr/bin/expr $$(/bin/ps -o rss --no-heading $$(/usr/bin/pgrep -of $$(echo $1 | sed "s/ \+/.*/g" ) )) \* 1024')
   end
 
   it { expect(config_file).to notify('service[zabbix-agent]').to(:restart).delayed }
