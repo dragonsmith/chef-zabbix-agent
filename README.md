@@ -13,19 +13,42 @@ Installs and configures zabbix-agent and appropriate custom scripts for it if ne
 
 ## Additional user defined zabbix items
 
-**iostat**
-
-`dev.iostat[*]`
-
-Where star stands for disk name. Show iops for that device.
-
-**mdraid**
+### mdraid
 
 `dev.md[*]`
 
-Invoked automatically if /proc/mdstat exists.
-Creates script that checks the status of md raid device.
+Accepts md device number. E.g. 1 for */dev/md1*.
+UserParameter is created if */proc/mdstat* exists.
+Uses external shell script to check status of md raid devices.
 
-# Copyright
-2013 Evil Martians (surrender@evilmartians.com)
+### pg-monitoring
+
+`psql.max_connections[*]`
+
+`psql.current_connections[*]`
+
+Accept PostgreSQL listen port number as you may have multiple PostgreSQL instances listening on different ports.
+
+This is an extremely tiny configuration for PostgreSQL monitoring. Please use a full-scale one if you really want to user this RDBMS in production. I'll add something more useful here in the future.
+
+### proc-mem-rss
+
+`proc.mem.rss[*]`
+
+Accepts search string that is converted to regular expression for *pgrep -of* command using this rule: All `spaces` are convertied to `.*`. This <strike>shi</strike>... behavior was implemented because of Zabbix restriction for item parameters: *special characters "\, ', ", `, *, ?, [, ], {, }, ~, $, !, &, ;, (, ), <, >, |, #, @, 0x0a" are not allowed in the parameters* .
+Returns RSS value for the oldest process that matches your regex *multiplied by 1024* to get **bytes** instead of Kb.
+
+# Sponsor
+
+Sponsored by [Evil Martians](http://evilmartians.com)
+
+# License and Author
+
+Kirill Kouznetsov (agon.smith@gmail.com)
+
+Copyright (C) 2012-2014 Kirill Kouznetsov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
