@@ -28,10 +28,8 @@ sudo 'zabbix-postgresql'  do
   user 'zabbix'
   runas 'postgres'
   commands [
-    '/usr/bin/psql -qtp 5432 -c show\ max_connections',
-    '/usr/bin/psql -qtp 5432 -c SELECT\ SUM(numbackends)\ FROM\ pg_stat_database',
-    '/usr/bin/psql -qtp 6432 -c show\ max_connections',
-    '/usr/bin/psql -qtp 6432 -c SELECT\ SUM(numbackends)\ FROM\ pg_stat_database'
+    '/usr/bin/psql -qtp [0-9]* -c show\ max_connections',
+    '/usr/bin/psql -qtp [0-9]* -c SELECT\ SUM(numbackends)\ FROM\ pg_stat_database'
   ]
   nopasswd true
 end
