@@ -1,12 +1,12 @@
 require_relative '../spec_helper'
 
 describe 'zabbix-agent::default' do
-  subject { ChefSpec::Runner.new.converge(described_recipe) }
+  subject { ChefSpec::SoloRunner.new.converge(described_recipe) }
 
   let(:config_template) { subject.template('/etc/zabbix/zabbix_agentd.conf') }
 
   context 'Old Ubuntu versions:' do
-    subject { ChefSpec::Runner.new(version: '12.04').converge(described_recipe) }
+    subject { ChefSpec::SoloRunner.new(version: '12.04').converge(described_recipe) }
 
     it do
       is_expected.to add_apt_repository('zabbix').with(

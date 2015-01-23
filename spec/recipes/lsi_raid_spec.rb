@@ -2,7 +2,7 @@ require_relative '../spec_helper'
 
 describe 'zabbix-agent::lsi_raid' do
 
-  subject { ChefSpec::Runner.new { |node| node.set['base']['mail_to'] = 'zabbix@evilmartians.com'}.converge(described_recipe) }
+  subject { ChefSpec::SoloRunner.new { |node| node.set['base']['mail_to'] = 'zabbix@evilmartians.com'}.converge(described_recipe) }
   let(:config_file) { subject.file('/etc/zabbix/agent-conf.d/megasas.conf') }
   let(:zabbix_service) { subject.service('zabbix-agent') }
 

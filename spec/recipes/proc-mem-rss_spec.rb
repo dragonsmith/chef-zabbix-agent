@@ -1,7 +1,7 @@
 require_relative '../spec_helper'
 
 describe 'zabbix-agent::proc-mem-rss' do
-  subject { ChefSpec::Runner.new.converge(described_recipe) }
+  subject { ChefSpec::SoloRunner.new.converge(described_recipe) }
   let(:config_file) { subject.file('/etc/zabbix/agent-conf.d/proc-mem-rss.conf') }
   let(:zabbix_service) { subject.service('zabbix-agent') }
 

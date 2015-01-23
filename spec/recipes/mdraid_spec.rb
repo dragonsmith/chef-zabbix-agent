@@ -1,7 +1,7 @@
 require_relative '../spec_helper'
 
 describe 'zabbix-agent::mdraid' do
-  subject { ChefSpec::Runner.new.converge(described_recipe) }
+  subject { ChefSpec::SoloRunner.new.converge(described_recipe) }
   let(:config_file) { subject.file('/etc/zabbix/agent-conf.d/md.conf') }
   let(:zabbix_service) { subject.service('zabbix-agent') }
 
