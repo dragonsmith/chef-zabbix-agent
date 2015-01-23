@@ -19,10 +19,16 @@ service node['zabbix']['service'] do
   action   :nothing
 end
 
+service 'megaclisas-statusd' do
+  supports restart: true, start: true, stop: true, check_megaclisas: true
+  action   :nothing
+end
+
 template '/etc/default/megaclisas-statusd' do
   owner 'root'
   mode '0644'
   source 'megaclisas-statusd.erb'
+  notifies :restart, "service[megaclisas-statusd]"
 end
 
 cookbook_file '/tmp/megacli_status.gem' do
