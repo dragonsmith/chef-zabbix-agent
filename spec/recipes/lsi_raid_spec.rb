@@ -2,11 +2,11 @@ require_relative '../spec_helper'
 
 describe 'zabbix-agent::lsi_raid' do
 
-  subject { ChefSpec::Runner.new { |node| node.set['base']['mail_to'] = 'zabbix@evilmartians.com'}.converge(described_recipe) }
-  let(:config_file) { subject.file('/etc/zabbix/agent-conf.d/megasas.conf') }
-  let(:zabbix_service) { subject.service('zabbix-agent') }
+  subject { ChefSpec::SoloRunner.new { |node| node.set['base']['mail_to'] = 'zabbix@evilmartians.com'}.converge(described_recipe) }
 
-  it { expect(zabbix_service).to do_nothing }
+  it { is_expected.to_not start_service('zabbix-agent') }
+
+  it { is_expected.to_not start_service('megaclisas-statusd') }
 
   it { is_expected.to add_apt_repository('le-vert') }
 
@@ -35,6 +35,6 @@ describe 'zabbix-agent::lsi_raid' do
                        .with(user: 'zabbix', commands: ['/usr/local/bin/megacli_status perform -n Zabbix'], nopasswd: true)
   }
 
-  it { expect(config_file).to notify('service[zabbix-agent]').to(:restart) }
-
+  it { expect(subject.file('/etc/zabbix/agent-conf.d/megasas.conf')).to notify('service[zabbix-agent]').to(:restart) }
+  it { expect(subject.template('/etc/default/megaclisas-statusd')).to notify('service[megaclisas-statusd]').to(:restart) }
 end
