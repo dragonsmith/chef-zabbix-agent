@@ -36,7 +36,7 @@ gem_package "megacli_status" do
 end
 
 file '/etc/zabbix/agent-conf.d/megasas.conf' do
-  content 'UserParameter=dev.megasas,/usr/bin/sudo /usr/local/bin/megacli_status -n Zabbix'
+  content 'UserParameter=dev.megasas,/usr/bin/sudo /usr/local/bin/megacli_status perform -n Zabbix'
   owner 'root'
   group 'root'
   mode '0644'
@@ -45,6 +45,6 @@ end
 
 sudo 'zabbix-megasas' do
   user 'zabbix'
-  commands ['/usr/local/bin/megacli_status -n Zabbix']
+  commands ['/usr/local/bin/megacli_status perform -n Zabbix']
   nopasswd true
 end

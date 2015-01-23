@@ -28,11 +28,11 @@ describe 'zabbix-agent::lsi_raid' do
 
   it { is_expected.to install_gem_package 'megacli_status' }
   it { is_expected.to render_file('/etc/zabbix/agent-conf.d/megasas.conf')
-                       .with_content('UserParameter=dev.megasas,/usr/bin/sudo /usr/local/bin/megacli_status -n Zabbix')
+                       .with_content('UserParameter=dev.megasas,/usr/bin/sudo /usr/local/bin/megacli_status perform -n Zabbix')
   }
 
   it { is_expected.to install_sudo('zabbix-megasas')
-                       .with(user: 'zabbix', commands: ['/usr/local/bin/megacli_status -n Zabbix'], nopasswd: true)
+                       .with(user: 'zabbix', commands: ['/usr/local/bin/megacli_status perform -n Zabbix'], nopasswd: true)
   }
 
   it { expect(config_file).to notify('service[zabbix-agent]').to(:restart) }
