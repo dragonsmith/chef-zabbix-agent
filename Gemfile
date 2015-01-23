@@ -13,4 +13,5 @@ group :development do
   gem 'test-kitchen'
   gem 'thor'
   gem 'vagrant-berkshelf'
+  gem 'chefspec'
 end
