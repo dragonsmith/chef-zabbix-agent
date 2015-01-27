@@ -1,5 +1,9 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.3 (2015-01-27)
+
+* new recipe for md arrays check based on [linuxsquad/zabbix_mdraid](https://github.com/linuxsquad/zabbix_mdraid)
+
 ## v1.3.1 (2014-08-28)
 
 * shell oneliner command was updated for `proc.rss.mem[*]`
