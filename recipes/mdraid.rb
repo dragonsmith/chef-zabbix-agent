@@ -9,31 +9,26 @@ service node['zabbix']['service'] do
   action   :nothing
 end
 
-directory '/opt/chef/zabbix/' do
-  owner 'root'
-  group 'root'
-  mode 0755
-  recursive true
-end
-
-cookbook_file '/opt/chef/zabbix/check_md_raid' do
+cookbook_file '/usr/local/bin/zabbix_mdraid.sh' do
   owner 'zabbix'
   group 'zabbix'
-  mode 0755
-  source 'check_md_raid'
+  mode '0755'
+  source 'zabbix_mdraid.sh'
 end
 
-file '/etc/zabbix/agent-conf.d/md.conf' do
-  content 'UserParameter=dev.md[*],/usr/bin/sudo /opt/chef/zabbix/check_md_raid -d /dev/md$1'
+cookbook_file '/etc/zabbix/agent-conf.d/md.conf' do
   owner 'root'
   group 'root'
-  mode 0644
+  mode '0644'
   notifies :restart, "service[#{node['zabbix']['service']}]", :delayed
 end
 
 sudo 'zabbix-mdadm' do
   user 'zabbix'
-  commands ['/opt/chef/zabbix/check_md_raid -d /dev/md[0-9]']
+  commands [
+    '/usr/local/bin/zabbix_mdraid.sh -D',
+    '/usr/local/bin/zabbix_mdraid.sh -m/dev/md[0-9]* ?*'
+  ]
   nopasswd true
 end
 
