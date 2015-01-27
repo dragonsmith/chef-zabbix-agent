@@ -21,6 +21,7 @@ Installs and configures zabbix-agent and appropriate custom scripts for it if ne
 
 Use autodiscovering for find MD devices
 Uses [external shell script](files/default/zabbix_mdraid.sh) to discover and check status of md raid devices.
+Currently uses [this template](https://github.com/linuxsquad/zabbix_mdraid/blob/master/zbx_export_templates.xml) for prototypes.
 
 ### pg-monitoring
 
