@@ -26,8 +26,8 @@ end
 sudo 'zabbix_mdadm' do
   user 'zabbix'
   commands [
-    "/usr/local/bin/zabbix_mdraid.sh -D",
-    "/usr/local/bin/zabbix_mdraid.sh -m'[0-9]+' -$2'$3'"
+    '/usr/local/bin/zabbix_mdraid.sh -D',
+    '/usr/local/bin/zabbix_mdraid.sh -m/dev/md[0-9]* ?*'
   ]
   nopasswd true
 end

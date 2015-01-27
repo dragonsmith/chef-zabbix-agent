@@ -15,7 +15,7 @@ describe 'zabbix-agent::linuxsquad' do
   it { is_expected.to install_sudo('zabbix_mdadm')
                        .with(user: 'zabbix',
                              commands: ['/usr/local/bin/zabbix_mdraid.sh -D',
-                                        "/usr/local/bin/zabbix_mdraid.sh -m'[0-9]+' -$2'$3'"],
+                                        '/usr/local/bin/zabbix_mdraid.sh -m/dev/md[0-9]* ?*'],
                              nopasswd: true)
   }
 
