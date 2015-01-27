@@ -16,14 +16,14 @@ cookbook_file '/usr/local/bin/zabbix_mdraid.sh' do
   source 'zabbix_mdraid.sh'
 end
 
-cookbook_file '/etc/zabbix/agent-conf.d/userparameter_mdraid.conf' do
+cookbook_file '/etc/zabbix/agent-conf.d/md.conf' do
   owner 'root'
   group 'root'
   mode '0644'
   notifies :restart, "service[#{node['zabbix']['service']}]", :delayed
 end
 
-sudo 'zabbix_mdadm' do
+sudo 'zabbix-mdadm' do
   user 'zabbix'
   commands [
     '/usr/local/bin/zabbix_mdraid.sh -D',
