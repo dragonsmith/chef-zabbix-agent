@@ -4,7 +4,7 @@
 #
 
 apt_repository 'zabbix' do
-  uri "http://repo.zabbix.com/zabbix/2.2/#{node['platform']}/"
+  uri "http://repo.zabbix.com/zabbix/#{node['zabbix']['version']}/#{node['platform']}/"
   distribution node['lsb']['codename']
   components ['main']
   key 'http://repo.zabbix.com/zabbix-official-repo.key'
