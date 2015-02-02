@@ -440,17 +440,44 @@
               <valuemap/>
             </item_prototype>
           </item_prototypes>
-          <trigger_prototypes>
-            <trigger_prototype>
-              <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(degraded|resyncing|recovering|Not Started)&quot;)}=1</expression>
-              <name>{#MD_DEVICE} RAID State</name>
-              <url/>
-              <status>0</status>
-              <priority>3</priority>
-              <description/>
-              <type>0</type>
-            </trigger_prototype>
-          </trigger_prototypes>
+	  <trigger_prototypes>
+	    <trigger_prototype>
+	      <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(degraded)&quot;)}=1</expression>
+	      <name>{#MD_DEVICE} RAID State: degraded!</name>
+	      <url/>
+	      <status>0</status>
+	      <priority>5</priority>
+	      <description/>
+	      <type>0</type>
+	    </trigger_prototype>
+	    <trigger_prototype>
+	      <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(Not Started)&quot;)}=1</expression>
+	      <name>{#MD_DEVICE} RAID State: not started!</name>
+	      <url/>
+	      <status>0</status>
+	      <priority>5</priority>
+	      <description/>
+	      <type>0</type>
+	    </trigger_prototype>
+	    <trigger_prototype>
+	      <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(resyncing)&quot;)}=1</expression>
+	      <name>{#MD_DEVICE} RAID State: resyncing</name>
+	      <url/>
+	      <status>0</status>
+	      <priority>2</priority>
+	      <description/>
+	      <type>0</type>
+	    </trigger_prototype>
+	    <trigger_prototype>
+	      <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(recovering)&quot;)}=1</expression>
+	      <name>{#MD_DEVICE} RAID State: recovering</name>
+	      <url/>
+	      <status>0</status>
+	      <priority>2</priority>
+	      <description/>
+	      <type>0</type>
+	    </trigger_prototype>
+	  </trigger_prototypes>
           <graph_prototypes>
             <graph_prototype>
               <name>{#MD_DEVICE} Array IO Performance</name>
