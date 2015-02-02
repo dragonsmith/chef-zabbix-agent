@@ -69,6 +69,6 @@ end
 
 include_recipe 'zabbix-agent::proc-mem-rss'
 
-include_recipe 'zabbix-agent::mdraid' if ::File.exist?('/proc/mdstat')
+include_recipe 'zabbix-agent::mdraid' if md_arrays_exists?
 
 # vim: ts=2 sw=2 et ai
