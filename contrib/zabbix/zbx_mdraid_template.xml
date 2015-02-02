@@ -51,7 +51,7 @@
           <item_prototypes>
             <item_prototype>
               <name>{#MD_DEVICE} Array device #$3</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
@@ -90,7 +90,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} Array device #$3</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
@@ -129,7 +129,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} Array Size</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>1</multiplier>
               <snmp_oid/>
@@ -168,7 +168,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} data read speed</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
@@ -207,7 +207,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} data write speed</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
@@ -246,7 +246,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} Number of Devices</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
@@ -285,7 +285,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} RAID Level</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
@@ -324,7 +324,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} read operation speed</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
@@ -363,7 +363,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} State</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
@@ -402,7 +402,7 @@
             </item_prototype>
             <item_prototype>
               <name>{#MD_DEVICE} write operation speed</name>
-              <type>0</type>
+              <type>7</type>
               <snmp_community/>
               <multiplier>0</multiplier>
               <snmp_oid/>
