@@ -442,7 +442,7 @@
           </item_prototypes>
 	  <trigger_prototypes>
 	    <trigger_prototype>
-	      <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(degraded)&quot;)}=1</expression>
+	      <expression>{Evil Martians - Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(degraded)&quot;)}=1</expression>
 	      <name>{#MD_DEVICE} RAID State: degraded!</name>
 	      <url/>
 	      <status>0</status>
@@ -451,7 +451,7 @@
 	      <type>0</type>
 	    </trigger_prototype>
 	    <trigger_prototype>
-	      <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(Not Started)&quot;)}=1</expression>
+	      <expression>{Evil Martians - Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(Not Started)&quot;)}=1</expression>
 	      <name>{#MD_DEVICE} RAID State: not started!</name>
 	      <url/>
 	      <status>0</status>
@@ -460,7 +460,7 @@
 	      <type>0</type>
 	    </trigger_prototype>
 	    <trigger_prototype>
-	      <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(resyncing)&quot;)}=1</expression>
+	      <expression>{Evil Martians - Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(resyncing)&quot;)}=1</expression>
 	      <name>{#MD_DEVICE} RAID State: resyncing</name>
 	      <url/>
 	      <status>0</status>
@@ -469,7 +469,7 @@
 	      <type>0</type>
 	    </trigger_prototype>
 	    <trigger_prototype>
-	      <expression>{Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(recovering)&quot;)}=1</expression>
+	      <expression>{Evil Martians - Template MD RAID:mdraid[{#MD_DEVICE},e,&quot;State&quot;].regexp(&quot;(recovering)&quot;)}=1</expression>
 	      <name>{#MD_DEVICE} RAID State: recovering</name>
 	      <url/>
 	      <status>0</status>
@@ -505,7 +505,7 @@
                   <calc_fnc>2</calc_fnc>
                   <type>0</type>
                   <item>
-                    <host>Template MD RAID</host>
+                    <host>Evil Martians - Template MD RAID</host>
                     <key>vfs.dev.read[{#MD_DEVICE},sectors]</key>
                   </item>
                 </graph_item>
@@ -517,7 +517,7 @@
                   <calc_fnc>2</calc_fnc>
                   <type>0</type>
                   <item>
-                    <host>Template MD RAID</host>
+                    <host>Evil Martians - Template MD RAID</host>
                     <key>vfs.dev.write[{#MD_DEVICE},sectors]</key>
                   </item>
                 </graph_item>
@@ -529,7 +529,7 @@
                   <calc_fnc>2</calc_fnc>
                   <type>0</type>
                   <item>
-                    <host>Template MD RAID</host>
+                    <host>Evil Martians - Template MD RAID</host>
                     <key>vfs.dev.read[{#MD_DEVICE},operations]</key>
                   </item>
                 </graph_item>
@@ -541,7 +541,7 @@
                   <calc_fnc>2</calc_fnc>
                   <type>0</type>
                   <item>
-                    <host>Template MD RAID</host>
+                    <host>Evil Martians - Template MD RAID</host>
                     <key>vfs.dev.write[{#MD_DEVICE},operations]</key>
                   </item>
                 </graph_item>
