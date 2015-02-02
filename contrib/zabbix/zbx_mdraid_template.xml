@@ -4,13 +4,13 @@
     <date>2013-07-18T05:19:56Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Martian Templates</name>
         </group>
     </groups>
     <templates>
         <template>
-            <template>Template MD RAID</template>
-            <name>Template MD RAID</name>
+            <template>Evil Martians - Template MD RAID</template>
+            <name>Evil Martians - Template MD RAID</name>
             <groups>
                 <group>
                     <name>Templates</name>
