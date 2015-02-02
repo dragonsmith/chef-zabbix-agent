@@ -58,7 +58,7 @@
               <key>mdraid[{#MD_DEVICE},d,1]</key>
               <delay>600</delay>
               <history>1</history>
-              <trends>365</trends>
+              <trends>90</trends>
               <status>0</status>
               <value_type>4</value_type>
               <allowed_hosts/>
@@ -97,7 +97,7 @@
               <key>mdraid[{#MD_DEVICE},d,0]</key>
               <delay>600</delay>
               <history>1</history>
-              <trends>365</trends>
+              <trends>90</trends>
               <status>0</status>
               <value_type>4</value_type>
               <allowed_hosts/>
@@ -174,8 +174,8 @@
               <snmp_oid/>
               <key>vfs.dev.read[{#MD_DEVICE},sectors]</key>
               <delay>60</delay>
-              <history>90</history>
-              <trends>365</trends>
+              <history>10</history>
+              <trends>90</trends>
               <status>0</status>
               <value_type>0</value_type>
               <allowed_hosts/>
@@ -213,8 +213,8 @@
               <snmp_oid/>
               <key>vfs.dev.write[{#MD_DEVICE},sectors]</key>
               <delay>60</delay>
-              <history>90</history>
-              <trends>365</trends>
+              <history>10</history>
+              <trends>90</trends>
               <status>0</status>
               <value_type>0</value_type>
               <allowed_hosts/>
@@ -292,7 +292,7 @@
               <key>mdraid[{#MD_DEVICE},e,&quot;Raid Level&quot;]</key>
               <delay>600</delay>
               <history>1</history>
-              <trends>365</trends>
+              <trends>90</trends>
               <status>0</status>
               <value_type>4</value_type>
               <allowed_hosts/>
@@ -330,8 +330,8 @@
               <snmp_oid/>
               <key>vfs.dev.read[{#MD_DEVICE},operations]</key>
               <delay>60</delay>
-              <history>90</history>
-              <trends>365</trends>
+              <history>10</history>
+              <trends>90</trends>
               <status>0</status>
               <value_type>0</value_type>
               <allowed_hosts/>
@@ -370,7 +370,7 @@
               <key>mdraid[{#MD_DEVICE},e,&quot;State&quot;]</key>
               <delay>300</delay>
               <history>1</history>
-              <trends>365</trends>
+              <trends>90</trends>
               <status>0</status>
               <value_type>4</value_type>
               <allowed_hosts/>
@@ -408,8 +408,8 @@
               <snmp_oid/>
               <key>vfs.dev.write[{#MD_DEVICE},operations]</key>
               <delay>60</delay>
-              <history>90</history>
-              <trends>365</trends>
+              <history>10</history>
+              <trends>90</trends>
               <status>0</status>
               <value_type>0</value_type>
               <allowed_hosts/>
