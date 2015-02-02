@@ -64,13 +64,24 @@ describe 'zabbix-agent::default' do
   }
 
   context 'MD RAID is absent' do
+    before do
+      allow(File).to receive(:readlines).with('/proc/mdstat').and_raise(Errno::ENOENT)
+    end
+
     it { is_expected.to_not include_recipe('zabbix-agent::mdraid') }
   end
 
-  context 'MD RAID is active' do
+  context 'MD RAID is not configured' do
     before do
-      allow(::File).to receive(:exist?).and_call_original
-      allow(::File).to receive(:exist?).with('/proc/mdstat').and_return(true)
+      allow(File).to receive(:readlines).with('/proc/mdstat').and_return(['some shit'])
+    end
+
+    it { is_expected.to_not include_recipe('zabbix-agent::mdraid') }
+  end
+
+  context 'MD RAID is present' do
+    before do
+      allow(File).to receive(:readlines).with('/proc/mdstat').and_return(['md0 : active raid1'])
     end
 
     it { is_expected.to include_recipe('zabbix-agent::mdraid') }

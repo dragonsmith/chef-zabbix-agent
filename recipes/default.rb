@@ -4,7 +4,7 @@
 #
 
 apt_repository 'zabbix' do
-  uri "http://repo.zabbix.com/zabbix/2.2/#{node['platform']}/"
+  uri "http://repo.zabbix.com/zabbix/#{node['zabbix']['version']}/#{node['platform']}/"
   distribution node['lsb']['codename']
   components ['main']
   key 'http://repo.zabbix.com/zabbix-official-repo.key'
@@ -69,6 +69,6 @@ end
 
 include_recipe 'zabbix-agent::proc-mem-rss'
 
-include_recipe 'zabbix-agent::mdraid' if ::File.exist?('/proc/mdstat')
+include_recipe 'zabbix-agent::mdraid' if md_arrays_exists?
 
 # vim: ts=2 sw=2 et ai
