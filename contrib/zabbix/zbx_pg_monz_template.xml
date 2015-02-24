@@ -27,7 +27,7 @@
             <items>
                 <item>
                     <name>Active (SQL processing) connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -66,7 +66,7 @@
                 </item>
                 <item>
                     <name>Buffers_alloc</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -105,7 +105,7 @@
                 </item>
                 <item>
                     <name>Buffers_backend</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -144,7 +144,7 @@
                 </item>
                 <item>
                     <name>Buffers_backend_fsync</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -183,7 +183,7 @@
                 </item>
                 <item>
                     <name>Buffers_checkpoint</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -222,7 +222,7 @@
                 </item>
                 <item>
                     <name>Buffers_clean</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -261,7 +261,7 @@
                 </item>
                 <item>
                     <name>Checkpoint count (by checkpoint_segments)</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -300,7 +300,7 @@
                 </item>
                 <item>
                     <name>Checkpoint count (by checkpoint_timeout)</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -339,7 +339,7 @@
                 </item>
                 <item>
                     <name>Committed transactions</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -378,7 +378,7 @@
                 </item>
                 <item>
                     <name>Connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -417,7 +417,7 @@
                 </item>
                 <item>
                     <name>Idle connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -456,7 +456,7 @@
                 </item>
                 <item>
                     <name>Idle in transaction connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -495,7 +495,7 @@
                 </item>
                 <item>
                     <name>Lock waiting connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -573,7 +573,7 @@
                 </item>
                 <item>
                     <name>Max connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -612,7 +612,7 @@
                 </item>
                 <item>
                     <name>Maxwritten_clean</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -651,7 +651,7 @@
                 </item>
                 <item>
                     <name>Number of postgres process</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -690,7 +690,7 @@
                 </item>
                 <item>
                     <name>PostgreSQL service is running</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -729,7 +729,7 @@
                 </item>
                 <item>
                     <name>Rolled back transactions</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -768,7 +768,7 @@
                 </item>
                 <item>
                     <name>Slow DML queries</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -807,7 +807,7 @@
                 </item>
                 <item>
                     <name>Slow queries</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -846,7 +846,7 @@
                 </item>
                 <item>
                     <name>Slow select queries</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
