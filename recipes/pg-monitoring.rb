@@ -63,3 +63,13 @@ sudo 'zabbix_pg_monz'  do
   ]
   nopasswd true
 end
+
+directory '/usr/local/bin'
+
+%w(find_dbname find_dbname_table).each do |script|
+  remote_file "/usr/local/bin/#{script}.sh" do
+    source "https://raw.githubusercontent.com/pg-monz/pg_monz/1.0.1/pg_monz/#{script}.sh"
+    mode '0755'
+    action :create_if_missing
+  end
+end
