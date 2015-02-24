@@ -13,15 +13,12 @@ service node['zabbix']['service'] do
   action   :nothing
 end
 
-file '/etc/zabbix/agent-conf.d/postgresql.conf' do
+template '/etc/zabbix/agent-conf.d/userparameter_pg_monz.conf' do
+  source 'userparameter_pg_monz.conf.erb'
   owner 'root'
   group 'root'
   mode 0644
   notifies :restart, 'service[zabbix-agent]', :delayed
-  content <<-EOF
-UserParameter=psql.max_connections[*],/usr/bin/sudo -u postgres /usr/bin/psql -qtp $1 -c 'show max_connections'
-UserParameter=psql.current_connections[*],/usr/bin/sudo -u postgres /usr/bin/psql -qtp $1 -c 'SELECT SUM(numbackends) FROM pg_stat_database'
-EOF
 end
 
 sudo 'zabbix-postgresql'  do
