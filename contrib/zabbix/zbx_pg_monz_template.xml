@@ -2306,7 +2306,7 @@
             <name>PostgreSQL process is not running.</name>
             <url/>
             <status>0</status>
-            <priority>4</priority>
+            <priority>5</priority>
             <description/>
             <type>0</type>
             <dependencies/>
@@ -2316,7 +2316,7 @@
             <name>PostgreSQL service is not running.</name>
             <url/>
             <status>0</status>
-            <priority>4</priority>
+            <priority>5</priority>
             <description/>
             <type>0</type>
             <dependencies/>
@@ -2326,7 +2326,7 @@
             <name>Too many slow queries</name>
             <url/>
             <status>0</status>
-            <priority>1</priority>
+            <priority>3</priority>
             <description/>
             <type>0</type>
             <dependencies/>
