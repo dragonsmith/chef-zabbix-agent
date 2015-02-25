@@ -1,5 +1,9 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.4 (2015-02-25)
+
+* pg-monitoring now uses [pg_monz](https://github.com/pg-monz/pg_monz) suite
+
 ## v1.3.3 (2015-01-27)
 
 * new recipe for md arrays check based on [linuxsquad/zabbix_mdraid](https://github.com/linuxsquad/zabbix_mdraid)
