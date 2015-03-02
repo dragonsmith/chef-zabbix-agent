@@ -3,6 +3,7 @@
 ## v1.3.5 (2015-03-02)
 
 * switching to zabbix-agent 2.4 by default.
+* specfile for recipe[zabbix-agent::pg-monitoring] updated.
 
 ## v1.3.4 (2015-02-25)
 
