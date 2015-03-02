@@ -1,5 +1,9 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.6 (205-03-02)
+
+* configure official zabbix repo for all debian-based distros.
+
 ## v1.3.5 (2015-03-02)
 
 * switching to zabbix-agent 2.4 by default.

@@ -8,7 +8,6 @@ apt_repository 'zabbix' do
   distribution node['lsb']['codename']
   components ['main']
   key 'http://repo.zabbix.com/zabbix-official-repo.key'
-  not_if { platform?('ubuntu') && node['lsb']['release'].to_i >= 14 }
 end
 
 package node['zabbix']['package'] do
