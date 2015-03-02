@@ -1,5 +1,9 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.5 (2015-03-02)
+
+* switching to zabbix-agent 2.4 by default.
+
 ## v1.3.4 (2015-02-25)
 
 * pg-monitoring now uses [pg_monz](https://github.com/pg-monz/pg_monz) suite

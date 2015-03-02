@@ -10,7 +10,7 @@ describe 'zabbix-agent::default' do
 
     it do
       is_expected.to add_apt_repository('zabbix').with(
-        uri: 'http://repo.zabbix.com/zabbix/2.2/ubuntu/',
+        uri: 'http://repo.zabbix.com/zabbix/2.4/ubuntu/',
         distribution: 'precise',
         key: 'http://repo.zabbix.com/zabbix-official-repo.key'
       )
