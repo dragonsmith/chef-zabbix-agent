@@ -883,6 +883,29 @@
                     </applications>
                     <valuemap/>
                 </item>
+                <item>
+                    <name>PostgreSQL connections ratio</name>
+                    <type>7</type>
+                    <multiplier>0</multiplier>
+                    <key>psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <delta>0</delta>
+                    <formula>1</formula>
+                    <data_type>0</data_type>
+		    <units>%</units>
+                    <authtype>0</authtype>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PgMonz</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
             </items>
             <discovery_rules>
                 <discovery_rule>
