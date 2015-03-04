@@ -31,7 +31,7 @@
                     <key>pgbouncer.total.avg_query</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -70,7 +70,7 @@
                     <key>pgbouncer.stat[free_clients]</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -109,7 +109,7 @@
                     <key>pgbouncer.stat[free_servers]</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -148,7 +148,7 @@
                     <key>pgbouncer.stat[login_clients]</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -187,7 +187,7 @@
                     <key>pgbouncer.stat[used_clients]</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -226,7 +226,7 @@
                     <key>pgbouncer.stat[used_servers]</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -265,7 +265,7 @@
                     <key>pgbouncer.total.avg_recv</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -304,7 +304,7 @@
                     <key>pgbouncer.total.avg_req</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -343,7 +343,7 @@
                     <key>pgbouncer.total.avg_sent</key>
                     <delay>120</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -410,7 +410,7 @@
                             <key>pgbouncer.stat[cl_active,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -449,7 +449,7 @@
                             <key>pgbouncer.stat[sv_active,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -488,7 +488,7 @@
                             <key>pgbouncer.stat[avg_recv,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -527,7 +527,7 @@
                             <key>pgbouncer.stat[avg_sent,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -566,7 +566,7 @@
                             <key>pgbouncer.stat[avg_query,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -605,7 +605,7 @@
                             <key>pgbouncer.stat[avg_req,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -644,7 +644,7 @@
                             <key>pgbouncer.stat[sv_idle,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -683,7 +683,7 @@
                             <key>pgbouncer.stat[sv_login,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -722,7 +722,7 @@
                             <key>pgbouncer.stat[sv_tested,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -761,7 +761,7 @@
                             <key>pgbouncer.stat[sv_used,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -800,7 +800,7 @@
                             <key>pgbouncer.stat[maxwait,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -839,7 +839,7 @@
                             <key>pgbouncer.stat[cl_waiting,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
