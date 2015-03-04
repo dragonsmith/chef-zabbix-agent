@@ -25,859 +25,489 @@
                 <item>
                     <name>Average query duration among all databases</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>1</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.total.avg_query</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
                     <units>ms</units>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>0.001</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
                 <item>
                     <name>Pgbouncer: Total free client connections</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.stat[free_clients]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
                 <item>
                     <name>Pgbouncer: Total free server connections</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.stat[free_servers]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
                 <item>
                     <name>Pgbouncer: Total login client connections</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.stat[login_clients]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
                 <item>
                     <name>Pgbouncer: Total used client connections</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.stat[used_clients]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
                 <item>
                     <name>Pgbouncer: Total used server connections</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.stat[used_servers]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
                 <item>
                     <name>Total received data from clients among all databases</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.total.avg_recv</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
                     <units>bps</units>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
                 <item>
                     <name>Total requests per second among all databases</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.total.avg_req</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
                     <units>rps</units>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
                 <item>
                     <name>Total sent data to clients among all databases</name>
                     <type>0</type>
-                    <snmp_community/>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>pgbouncer.total.avg_sent</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
                     <units>bps</units>
                     <delta>0</delta>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
                     <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>Pgbouncer</name>
                         </application>
                     </applications>
-                    <valuemap/>
                 </item>
             </items>
             <discovery_rules>
                 <discovery_rule>
                     <name>Pgbouncer pools</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
                     <key>pgbouncer.pool.discovery</key>
                     <delay>300</delay>
                     <status>0</status>
-                    <allowed_hosts/>
-                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
                     <filter>{#POOLNAME}:</filter>
                     <lifetime>1</lifetime>
-                    <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 active client connections</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[cl_active,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 active server connections</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[sv_active,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 average data received</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[avg_recv,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 average data sent</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[avg_sent,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 average queries</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[avg_query,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 average requests</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[avg_req,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 idle server connections</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[sv_idle,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 login server connections</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[sv_login,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 server tested connections</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[sv_tested,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 server used connections</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[sv_used,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 server waiting connections</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[maxwait,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                         <item_prototype>
                             <name>Pgbouncer: pool $2 waiting client connections</name>
                             <type>0</type>
-                            <snmp_community/>
                             <multiplier>0</multiplier>
-                            <snmp_oid/>
                             <key>pgbouncer.stat[cl_waiting,{#POOLNAME}]</key>
                             <delay>120</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
                             <delta>0</delta>
-                            <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
                                     <name>Pgbouncer</name>
                                 </application>
                             </applications>
-                            <valuemap/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>{Pgbouncer-Extended-Template:pgbouncer.stat[maxwait,{#POOLNAME}].last(0)}&gt;0</expression>
                             <name>Pgbouncer{#POOLNAME} maxwait reached on {HOSTNAME}</name>
-                            <url/>
                             <status>0</status>
                             <priority>3</priority>
-                            <description/>
                             <type>0</type>
                         </trigger_prototype>
                     </trigger_prototypes>
@@ -1121,21 +751,15 @@
                     </graph_prototypes>
                 </discovery_rule>
             </discovery_rules>
-            <macros/>
-            <templates/>
-            <screens/>
         </template>
     </templates>
     <triggers>
         <trigger>
             <expression>{Pgbouncer-Extended-Template:pgbouncer.stat[free_servers].last(0)}&lt;5</expression>
             <name>Too few pgbouncer free server connections on {HOSTNAME}</name>
-            <url/>
             <status>0</status>
             <priority>3</priority>
-            <description/>
             <type>0</type>
-            <dependencies/>
         </trigger>
     </triggers>
     <graphs>
