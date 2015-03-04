@@ -24,7 +24,7 @@
             <items>
                 <item>
                     <name>Average query duration among all databases</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>1</multiplier>
                     <key>pgbouncer.total.avg_query</key>
                     <delay>120</delay>
@@ -47,7 +47,7 @@
                 </item>
                 <item>
                     <name>Pgbouncer: Total free client connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>pgbouncer.stat[free_clients]</key>
                     <delay>120</delay>
@@ -69,7 +69,7 @@
                 </item>
                 <item>
                     <name>Pgbouncer: Total free server connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>pgbouncer.stat[free_servers]</key>
                     <delay>120</delay>
@@ -91,7 +91,7 @@
                 </item>
                 <item>
                     <name>Pgbouncer: Total login client connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>pgbouncer.stat[login_clients]</key>
                     <delay>120</delay>
@@ -113,7 +113,7 @@
                 </item>
                 <item>
                     <name>Pgbouncer: Total used client connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>pgbouncer.stat[used_clients]</key>
                     <delay>120</delay>
@@ -135,7 +135,7 @@
                 </item>
                 <item>
                     <name>Pgbouncer: Total used server connections</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>pgbouncer.stat[used_servers]</key>
                     <delay>120</delay>
@@ -157,7 +157,7 @@
                 </item>
                 <item>
                     <name>Total received data from clients among all databases</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>pgbouncer.total.avg_recv</key>
                     <delay>120</delay>
@@ -180,7 +180,7 @@
                 </item>
                 <item>
                     <name>Total requests per second among all databases</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>pgbouncer.total.avg_req</key>
                     <delay>120</delay>
@@ -203,7 +203,7 @@
                 </item>
                 <item>
                     <name>Total sent data to clients among all databases</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>pgbouncer.total.avg_sent</key>
                     <delay>120</delay>
