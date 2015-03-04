@@ -883,6 +883,29 @@
                     </applications>
                     <valuemap/>
                 </item>
+                <item>
+                    <name>PostgreSQL connections ratio</name>
+                    <type>7</type>
+                    <multiplier>0</multiplier>
+                    <key>psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <delta>0</delta>
+                    <formula>1</formula>
+                    <data_type>0</data_type>
+		    <units>%</units>
+                    <authtype>0</authtype>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PgMonz</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
             </items>
             <discovery_rules>
                 <discovery_rule>
@@ -2331,6 +2354,36 @@
             <type>0</type>
             <dependencies/>
         </trigger>
+        <trigger>
+            <expression>{Template PgMonz:psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}].avg(#3)}&gt;90</expression>
+            <name>PostgreSQL is using more than 90% of allowed connections</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template PgMonz:psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}].avg(#3)}&gt;80</expression>
+            <name>PostgreSQL is using more than 80% of allowed connections</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template PgMonz:psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}].avg(#3)}&gt;70</expression>
+            <name>PostgreSQL is using more than 70% of allowed connections</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
     </triggers>
     <graphs>
         <graph>
@@ -2457,5 +2510,37 @@
                 </graph_item>
             </graph_items>
         </graph>
+	<graph>
+	  <name>PostgreSQL connections ratio</name>
+          <width>900</width>
+          <height>400</height>
+          <yaxismin>0.0000</yaxismin>
+          <yaxismax>100.0000</yaxismax>
+          <show_work_period>1</show_work_period>
+          <show_triggers>1</show_triggers>
+          <type>0</type>
+          <show_legend>1</show_legend>
+          <show_3d>0</show_3d>
+          <percent_left>0.0000</percent_left>
+          <percent_right>0.0000</percent_right>
+          <ymin_type_1>0</ymin_type_1>
+          <ymax_type_1>0</ymax_type_1>
+          <ymin_item_1>0</ymin_item_1>
+          <ymax_item_1>0</ymax_item_1>
+          <graph_items>
+            <graph_item>
+              <sortorder>0</sortorder>
+              <drawtype>0</drawtype>
+              <color>C80000</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <item>
+                <host>Template PgMonz</host>
+                <key>psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+              </item>
+            </graph_item>
+          </graph_items>
+	</graph>
     </graphs>
 </zabbix_export>

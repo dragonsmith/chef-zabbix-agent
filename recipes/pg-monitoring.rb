@@ -58,6 +58,7 @@ sudo 'zabbix_pg_monz'  do
 "/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select xact_commit from pg_stat_database where datname \\= '*'",
 "/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select xact_rollback from pg_stat_database where datname \\= '*'",
 '/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c show max_connections',
+"/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select (select count(*) from pg_stat_activity)\\:\\:int*100/(select setting from pg_settings where name \\= 'max_connections')\\:\\:int",
 '/usr/local/bin/find_dbname.sh [0-9]* postgres postgres',
 '/usr/local/bin/find_dbname_table.sh [0-9]* postgres postgres'
   ]
