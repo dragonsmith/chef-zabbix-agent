@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# This file is managed by Chef.
+# Do NOT modify this file directly.
+#
+# Original Author: Lesovsky A.V.
+# Author:          Maxim Filatov
+# Description:	   Pgbouncer pools auto-discovery
+
+if [ ! -f ~zabbix/.pgpass ]; then echo "ERROR: ~zabbix/.pgpass not found" ; exit 1; fi
+
+pool_list=$(psql -h <%= node[:pgbouncer][:listen_address] %> -p <%= node[:pgbouncer][:listen_port] %> -U <%= node[:pgbouncer][:admin_users].first %> -ltAF: --dbname=pgbouncer -c "show pools" |cut -d: -f1 |grep -v ^pgbouncer)
+
+echo -n '{"data":['
+for pool in $pool_list; do echo -n "{\"{#POOLNAME}\": \"$pool\"},"; done |sed -e 's:\},$:\}:'
+echo -n ']}'
