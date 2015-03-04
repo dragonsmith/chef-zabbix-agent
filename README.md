@@ -40,6 +40,27 @@ This is an extremely tiny configuration for PostgreSQL monitoring. Please use a 
 Accepts search string that is converted to regular expression for *pgrep -of* command using this rule: All `spaces` are convertied to `.*`. This <strike>shi</strike>... behavior was implemented because of Zabbix restriction for item parameters: *special characters "\, ', ", `, *, ?, [, ], {, }, ~, $, !, &, ;, (, ), <, >, |, #, @, 0x0a" are not allowed in the parameters* .
 Returns RSS value for the oldest process that matches your regex *multiplied by 1024* to get **bytes** instead of Kb.
 
+### pgbouncer
+
+`pgbouncer.pool.discovery`
+
+Pgbouncer pools discovery rule
+
+`pgbouncer.stat[*]`
+
+Statistics collector. Executes `/usr/local/bin/pgbouncer.stat.sh`.
+Accepts:
+$1 - param\_name,
+$2 - pool\_name
+
+`pgbouncer.total.avg_req`
+
+`pgbouncer.total.avg_recv`
+
+`pgbouncer.total.avg_sent`
+
+`pgbouncer.total.avg_query`
+
 # Sponsor
 
 Sponsored by [Evil Martians](http://evilmartians.com)

@@ -1,6 +1,10 @@
 # zabbix-agent cookbook CHANGELOG
 
-## v1.3.6 (205-03-02)
+## v1.3.7 (2015-03-04)
+
+* pgbouncer recipe (based on [lesovsky/zabbix-extensions](https://github.com/lesovsky/zabbix-extensions/tree/master/files/pgbouncer))
+
+## v1.3.6 (2015-03-02)
 
 * configure official zabbix repo for all debian-based distros.
 

@@ -14,6 +14,13 @@ package node['zabbix']['package'] do
   action :install
 end
 
+directory '/var/lib/zabbix' do
+  owner 'zabbix'
+  group 'zabbix'
+  mode '0700'
+  recursive true
+end
+
 listen_ip = if IPAddress.valid?(node['zabbix']['listen'])
               node['zabbix']['listen']
             elsif %w(any all).include?(node['zabbix']['listen'])

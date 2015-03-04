@@ -1,0 +1,13 @@
+#
+# This file is managed by Chef.
+# Do NOT modify this file directly.
+#
+<% node[:zabbix][:pgpass_records].each do |record| %>
+<%= [
+  record[:listen_address],
+  record[:listen_port],
+  record[:database],
+  record[:username],
+  record[:password]
+].join(':') %>
+<% end %>
