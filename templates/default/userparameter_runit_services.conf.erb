@@ -1,0 +1,13 @@
+# PostgreSQL user parameter
+#
+# This file is managed by Chef.
+# Do NOT modify this file directly.
+#
+
+# Runit services discovery rule
+UserParameter=runit_services.list.discovery, /usr/local/bin/find_runit_services.sh
+
+# Get runit service data
+UserParameter=runit_services.pcpu[*], /usr/bin/sudo /usr/local/bin/value_for_runit_service.sh $1 pcpu
+UserParameter=runit_services.vsz[*],  /usr/bin/sudo /usr/local/bin/value_for_runit_service.sh $1 vsz
+UserParameter=runit_services.rsz[*],  /usr/bin/sudo /usr/local/bin/value_for_runit_service.sh $1 rsz
