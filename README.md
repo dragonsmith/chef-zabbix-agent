@@ -40,6 +40,18 @@ This is an extremely tiny configuration for PostgreSQL monitoring. Please use a 
 Accepts search string that is converted to regular expression for *pgrep -of* command using this rule: All `spaces` are convertied to `.*`. This <strike>shi</strike>... behavior was implemented because of Zabbix restriction for item parameters: *special characters "\, ', ", `, *, ?, [, ], {, }, ~, $, !, &, ;, (, ), <, >, |, #, @, 0x0a" are not allowed in the parameters* .
 Returns RSS value for the oldest process that matches your regex *multiplied by 1024* to get **bytes** instead of Kb.
 
+## runit_services
+
+`runit_services.list.discovery`
+
+`runit_services.pcpu[*]`
+
+`runit_services.rsz[*]`
+
+`runit_services.vsz[*]`
+
+Bunch of parameters with autodiscovering for monitor CPU and memory usage by active services, running over runit.
+
 # Sponsor
 
 Sponsored by [Evil Martians](http://evilmartians.com)
