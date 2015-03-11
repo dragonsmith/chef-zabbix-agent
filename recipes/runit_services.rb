@@ -27,9 +27,9 @@ sudo 'zabbix_runit_services'  do
   user 'zabbix'
   runas 'root'
   commands [
-    '/usr/local/bin/value_for_runit_service.sh [a-z]* pcpu',
-    '/usr/local/bin/value_for_runit_service.sh [a-z]* vsz',
-    '/usr/local/bin/value_for_runit_service.sh [a-z]* rsz'
+    '/usr/local/bin/value_for_runit_service.sh [a-z_0-9]* pcpu',
+    '/usr/local/bin/value_for_runit_service.sh [a-z_0-9]* vsz',
+    '/usr/local/bin/value_for_runit_service.sh [a-z_0-9]* rsz'
   ]
   nopasswd true
 end
