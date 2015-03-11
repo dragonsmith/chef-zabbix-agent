@@ -1,5 +1,9 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.7 (unreleased)
+
+* runit services
+
 ## v1.3.6 (205-03-02)
 
 * configure official zabbix repo for all debian-based distros.
