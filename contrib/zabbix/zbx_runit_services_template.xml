@@ -65,7 +65,7 @@
                         <item_prototype>
                             <name>[{#RUNIT_SERVICE}] resident memory</name>
                             <type>7</type>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <key>runit_services.rsz[{#RUNIT_SERVICE}]</key>
                             <delay>30</delay>
                             <history>7</history>
@@ -77,7 +77,7 @@
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
                             <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <formula>1</formula>
+                            <formula>1024</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
                             <description>Runit service {#RUNIT_SERVICE}: resident memory size</description>
@@ -91,7 +91,7 @@
                         <item_prototype>
                             <name>[{#RUNIT_SERVICE}] virtual memory</name>
                             <type>7</type>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <key>runit_services.vsz[{#RUNIT_SERVICE}]</key>
                             <delay>30</delay>
                             <history>7</history>
@@ -103,7 +103,7 @@
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
                             <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <formula>1</formula>
+                            <formula>1024</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
                             <description>Runit service {#RUNIT_SERVICE}: virtual memory size</description>
