@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-03-11T11:14:27Z</date>
+    <date>2015-03-12T07:06:45Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Martian Templates</name>
         </group>
     </groups>
     <templates>
         <template>
             <template>runit_services</template>
-            <name>Runit services</name>
+            <name>Evil Martians - Runit services</name>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Martian Templates</name>
                 </group>
             </groups>
             <applications>
