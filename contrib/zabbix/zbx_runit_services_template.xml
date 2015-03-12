@@ -45,7 +45,7 @@
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
-                            <value_type>3</value_type>
+                            <value_type>0</value_type>
                             <units>%</units>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
