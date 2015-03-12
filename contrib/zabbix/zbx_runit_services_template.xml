@@ -161,16 +161,10 @@
                             <show_3d>0</show_3d>
                             <percent_left>0.0000</percent_left>
                             <percent_right>0.0000</percent_right>
-                            <ymin_type_1>2</ymin_type_1>
-                            <ymax_type_1>2</ymax_type_1>
-                            <ymin_item_1>
-                                <host>runit_services</host>
-                                <key>runit_services.rsz[{#RUNIT_SERVICE}]</key>
-                            </ymin_item_1>
-                            <ymax_item_1>
-                                <host>runit_services</host>
-                                <key>runit_services.rsz[{#RUNIT_SERVICE}]</key>
-                            </ymax_item_1>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
@@ -199,16 +193,10 @@
                             <show_3d>0</show_3d>
                             <percent_left>0.0000</percent_left>
                             <percent_right>0.0000</percent_right>
-                            <ymin_type_1>2</ymin_type_1>
-                            <ymax_type_1>2</ymax_type_1>
-                            <ymin_item_1>
-                                <host>runit_services</host>
-                                <key>runit_services.vsz[{#RUNIT_SERVICE}]</key>
-                            </ymin_item_1>
-                            <ymax_item_1>
-                                <host>runit_services</host>
-                                <key>runit_services.vsz[{#RUNIT_SERVICE}]</key>
-                            </ymax_item_1>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
