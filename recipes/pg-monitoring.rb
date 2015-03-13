@@ -39,6 +39,7 @@ sudo 'zabbix_pg_monz'  do
 "/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select count(*) from pg_stat_activity where state \\= 'active' and now() - query_start > '[0-9]* sec'\\:\\:interval and query ~* '^(insert|update|delete)'",
 "/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select count(*) from pg_stat_activity where state \\= 'active' and now() - query_start > '[0-9]* sec'\\:\\:interval",
 "/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select count(*) from pg_stat_activity where waiting \\= 't'",
+"/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select (select setting from pg_settings where name \\= 'max_connections')\\:\\:bigint - (select count(*) from pg_stat_activity)",
 '/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select count(*) from pg_stat_activity;',
 "/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select count(state) from pg_stat_activity where state \\= 'active'",
 "/usr/bin/psql -p [0-9]* -U postgres -d postgres -A -t -c select count(state) from pg_stat_activity where state \\= 'idle in transaction'",
