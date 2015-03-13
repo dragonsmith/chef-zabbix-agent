@@ -1,5 +1,9 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.8 (2015-03-13)
+
+* iostat
+
 ## v1.3.7 (2015-03-13)
 
 * runit services
