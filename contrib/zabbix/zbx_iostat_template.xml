@@ -29,7 +29,7 @@
                     <key>iostat.collect</key>
                     <delay>60</delay>
                     <history>7</history>
-                    <trends>365</trends>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <delta>0</delta>
@@ -78,7 +78,7 @@
                             <key>iostat.metric[{#HARDDISK},avgqu-sz]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>req</units>
@@ -104,7 +104,7 @@
                             <key>iostat.metric[{#HARDDISK},avgrq-sz]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>sector/request</units>
@@ -130,7 +130,7 @@
                             <key>iostat.metric[{#HARDDISK},await]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>ms</units>
@@ -156,7 +156,7 @@
                             <key>iostat.metric[{#HARDDISK},r_await]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>ms</units>
@@ -182,7 +182,7 @@
                             <key>iostat.metric[{#HARDDISK},rkb/s]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>kb/s</units>
@@ -208,7 +208,7 @@
                             <key>iostat.metric[{#HARDDISK},r/s]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>ops</units>
@@ -234,7 +234,7 @@
                             <key>iostat.metric[{#HARDDISK},rrqm/s]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>rps</units>
@@ -260,7 +260,7 @@
                             <key>iostat.metric[{#HARDDISK},util]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>%</units>
@@ -286,7 +286,7 @@
                             <key>iostat.metric[{#HARDDISK},w_await]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>ms</units>
@@ -312,7 +312,7 @@
                             <key>iostat.metric[{#HARDDISK},w/s]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>ops</units>
@@ -338,7 +338,7 @@
                             <key>iostat.metric[{#HARDDISK},wrqm/s]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>rps</units>
@@ -364,7 +364,7 @@
                             <key>iostat.metric[{#HARDDISK},wkb/s]</key>
                             <delay>60</delay>
                             <history>7</history>
-                            <trends>365</trends>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <units>kb/s</units>
