@@ -13,3 +13,4 @@ end
 
 depends 'apt'
 depends 'sudo'
+depends 'cron'

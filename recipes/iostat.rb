@@ -32,3 +32,14 @@ directory '/usr/local/bin'
     mode '0755'
   end
 end
+
+# Create crontask via cron cookbook
+cron_d 'zabbix_iostat_collect' do
+  command '/usr/local/bin/iostat-collect.sh /tmp/iostat.out 8 > /dev/null'
+  user    'zabbix'
+  minute  '*'
+  hour    '*'
+  day     '*'
+  month   '*'
+  weekday '*'
+end
