@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2013-10-22T09:09:17Z</date>
+    <date>2015-03-13T16:25:14Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Martian Templates</name>
         </group>
     </groups>
     <templates>
@@ -13,7 +13,7 @@
             <name>Template PgMonz</name>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Martian Templates</name>
                 </group>
             </groups>
             <applications>
@@ -37,6 +37,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -60,6 +62,8 @@
                     <units>buffers/s</units>
                     <delta>1</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -83,6 +87,8 @@
                     <units>buffers/s</units>
                     <delta>1</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -106,6 +112,8 @@
                     <units>buffers/s</units>
                     <delta>1</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -129,6 +137,8 @@
                     <units>buffers/s</units>
                     <delta>1</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -152,6 +162,8 @@
                     <units>buffers/s</units>
                     <delta>1</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -175,6 +187,8 @@
                     <units>cps</units>
                     <delta>2</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -198,6 +212,8 @@
                     <units>cps</units>
                     <delta>2</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -221,6 +237,8 @@
                     <units>tps</units>
                     <delta>1</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -243,6 +261,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -265,6 +285,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -287,6 +309,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -309,6 +333,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -331,6 +357,8 @@
                     <value_type>2</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -353,6 +381,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -376,6 +406,8 @@
                     <units>buffers/s</units>
                     <delta>1</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -398,6 +430,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -420,6 +454,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -443,9 +479,37 @@
                     <units>tps</units>
                     <delta>1</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PgMonz</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Server connections ratio</name>
+                    <type>7</type>
+                    <multiplier>0</multiplier>
+                    <key>psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <formula>1</formula>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <description>Opened connections to total connections ratio. In percents</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -465,6 +529,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -487,6 +553,8 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -509,30 +577,10 @@
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <formula>1</formula>
                     <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>PgMonz</name>
-                        </application>
-                    </applications>
-                </item>
-                <item>
-                    <name>PostgreSQL connections ratio</name>
-                    <type>7</type>
-                    <multiplier>0</multiplier>
-                    <key>psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    <delay>60</delay>
-                    <history>7</history>
-                    <trends>90</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <delta>0</delta>
-                    <formula>1</formula>
-                    <data_type>0</data_type>
-		    <units>%</units>
                     <authtype>0</authtype>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -550,8 +598,12 @@
                     <delay>3600</delay>
                     <status>1</status>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <authtype>0</authtype>
-                    <filter>:</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                    </filter>
                     <lifetime>30</lifetime>
                     <item_prototypes>
                         <item_prototype>
@@ -566,6 +618,8 @@
                             <value_type>3</value_type>
                             <delta>2</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -588,6 +642,8 @@
                             <value_type>3</value_type>
                             <delta>2</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -610,6 +666,8 @@
                             <value_type>3</value_type>
                             <delta>2</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -633,6 +691,8 @@
                             <units>%</units>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -655,6 +715,8 @@
                             <value_type>3</value_type>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -677,6 +739,8 @@
                             <value_type>3</value_type>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -699,6 +763,8 @@
                             <value_type>3</value_type>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -721,6 +787,8 @@
                             <value_type>3</value_type>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -743,6 +811,8 @@
                             <value_type>3</value_type>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -765,6 +835,8 @@
                             <value_type>3</value_type>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -787,6 +859,8 @@
                             <value_type>3</value_type>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -809,6 +883,8 @@
                             <value_type>3</value_type>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -831,6 +907,8 @@
                             <value_type>3</value_type>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -853,6 +931,8 @@
                             <value_type>3</value_type>
                             <delta>2</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -872,8 +952,12 @@
                     <delay>3600</delay>
                     <status>0</status>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <authtype>0</authtype>
-                    <filter>:</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                    </filter>
                     <lifetime>30</lifetime>
                     <item_prototypes>
                         <item_prototype>
@@ -888,6 +972,8 @@
                             <value_type>3</value_type>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -911,6 +997,8 @@
                             <units>%</units>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -934,6 +1022,8 @@
                             <units>tps</units>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -957,6 +1047,8 @@
                             <units>B</units>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -979,6 +1071,8 @@
                             <value_type>3</value_type>
                             <delta>2</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -1002,6 +1096,8 @@
                             <units>tps</units>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -1025,6 +1121,8 @@
                             <units>Byte</units>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -1048,6 +1146,8 @@
                             <units>tup/s</units>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -1071,6 +1171,8 @@
                             <units>tup/s</units>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -1094,6 +1196,8 @@
                             <units>tup/s</units>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -1117,6 +1221,8 @@
                             <units>tup/s</units>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -1140,6 +1246,8 @@
                             <units>tup/s</units>
                             <delta>1</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <formula>1</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
@@ -1155,7 +1263,7 @@
                         <trigger_prototype>
                             <expression>{Template PgMonz:psql.cachehit_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}].avg(300)}&lt;{$PGCACHEHIT_THRESHOLD}</expression>
                             <name>[{#DBNAME}] Cache hit ratio is too low</name>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>1</priority>
                             <description>Cache hit ratio of last 5 minutes is too low</description>
                             <type>0</type>
@@ -1163,7 +1271,7 @@
                         <trigger_prototype>
                             <expression>{Template PgMonz:psql.db_size[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}].last(0)}&gt;{$PGDBSIZE_THRESHOLD}</expression>
                             <name>[{#DBNAME}] DB Size is too large</name>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>2</priority>
                             <description>Cache hit ratio of last 5 minutes is too low</description>
                             <type>0</type>
@@ -1178,7 +1286,7 @@
                         <trigger_prototype>
                             <expression>{Template PgMonz:psql.db_temp_bytes[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}].last(0)}&gt;{$PGTEMPBYTES_THRESHOLD}</expression>
                             <name>[{#DBNAME}] Too many temp bytes</name>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>1</priority>
                             <type>0</type>
                         </trigger_prototype>
@@ -1441,6 +1549,7 @@
                                 <name>Checkpoint count</name>
                                 <host>Template PgMonz</host>
                             </resource>
+                            <max_columns>3</max_columns>
                         </screen_item>
                         <screen_item>
                             <resourcetype>0</resourcetype>
@@ -1460,6 +1569,7 @@
                                 <name>Connection count</name>
                                 <host>Template PgMonz</host>
                             </resource>
+                            <max_columns>3</max_columns>
                         </screen_item>
                     </screen_items>
                 </screen>
@@ -1470,43 +1580,22 @@
         <trigger>
             <expression>{Template PgMonz:psql.checkpoints_req[{$PGPORT},{$PGROLE},{$PGDATABASE}].last(0)}&gt;{$PGCHECKPOINTS_THRESHOLD}</expression>
             <name>Checkpoints are occurring too frequently</name>
-            <status>0</status>
+            <status>1</status>
             <priority>1</priority>
             <type>0</type>
         </trigger>
         <trigger>
             <expression>{Template PgMonz:psql.server_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}].last(0)}&gt;{$PGCONNECTIONS_THRESHOLD}</expression>
             <name>Many connections are forked.</name>
-            <status>0</status>
+            <status>1</status>
             <priority>1</priority>
             <type>0</type>
         </trigger>
         <trigger>
-            <expression>{Template PgMonz:proc.num[,postgres,,].last(0)}=0</expression>
-            <name>PostgreSQL process is not running.</name>
+            <expression>{Template PgMonz:psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}].avg(#3)}&gt;70</expression>
+            <name>PostgreSQL is using more than 70% of allowed connections</name>
             <status>0</status>
-            <priority>5</priority>
-            <type>0</type>
-        </trigger>
-        <trigger>
-            <expression>{Template PgMonz:psql.running[{$PGPORT},{$PGROLE},{$PGDATABASE}].last(0)}#0</expression>
-            <name>PostgreSQL service is not running.</name>
-            <status>0</status>
-            <priority>5</priority>
-            <type>0</type>
-        </trigger>
-        <trigger>
-            <expression>{Template PgMonz:psql.slow_queries[{$PGPORT},{$PGROLE},{$PGDATABASE},{$PGSLOWQUERY_THRESHOLD}].last(0)}&gt;{$PGSLOWQUERY_THRESHOLD}</expression>
-            <name>Too many slow queries</name>
-            <status>0</status>
-            <priority>3</priority>
-            <type>0</type>
-        </trigger>
-        <trigger>
-            <expression>{Template PgMonz:psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}].avg(#3)}&gt;90</expression>
-            <name>PostgreSQL is using more than 90% of allowed connections</name>
-            <status>0</status>
-            <priority>4</priority>
+            <priority>2</priority>
             <type>0</type>
         </trigger>
         <trigger>
@@ -1517,10 +1606,32 @@
             <type>0</type>
         </trigger>
         <trigger>
-            <expression>{Template PgMonz:psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}].avg(#3)}&gt;70</expression>
-            <name>PostgreSQL is using more than 70% of allowed connections</name>
+            <expression>{Template PgMonz:psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}].avg(#3)}&gt;90</expression>
+            <name>PostgreSQL is using more than 90% of allowed connections</name>
             <status>0</status>
-            <priority>2</priority>
+            <priority>4</priority>
+            <description>Pound in the bell when connections ratio is more than 90%</description>
+            <type>0</type>
+        </trigger>
+        <trigger>
+            <expression>{Template PgMonz:proc.num[,postgres,,].last(0)}=0</expression>
+            <name>PostgreSQL process is not running.</name>
+            <status>0</status>
+            <priority>5</priority>
+            <type>0</type>
+        </trigger>
+        <trigger>
+            <expression>{Template PgMonz:psql.running[{$PGPORT},{$PGROLE},{$PGDATABASE}].last(0)}&lt;&gt;0</expression>
+            <name>PostgreSQL service is not running.</name>
+            <status>0</status>
+            <priority>5</priority>
+            <type>0</type>
+        </trigger>
+        <trigger>
+            <expression>{Template PgMonz:psql.slow_queries[{$PGPORT},{$PGROLE},{$PGDATABASE},{$PGSLOWQUERY_THRESHOLD}].last(0)}&gt;{$PGSLOWQUERY_THRESHOLD}</expression>
+            <name>Too many slow queries</name>
+            <status>0</status>
+            <priority>3</priority>
             <type>0</type>
         </trigger>
     </triggers>
@@ -1544,18 +1655,6 @@
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
-                    <color>C80000</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Template PgMonz</host>
-                        <key>psql.checkpoints_req[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
                     <sortorder>1</sortorder>
                     <drawtype>0</drawtype>
                     <color>00C800</color>
@@ -1565,6 +1664,18 @@
                     <item>
                         <host>Template PgMonz</host>
                         <key>psql.checkpoints_timed[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>C80000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template PgMonz</host>
+                        <key>psql.checkpoints_req[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1588,15 +1699,15 @@
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>3</sortorder>
+                    <sortorder>0</sortorder>
                     <drawtype>0</drawtype>
-                    <color>00C8C8</color>
+                    <color>00C800</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
                         <host>Template PgMonz</host>
-                        <key>psql.idle_tx_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                        <key>psql.server_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1612,18 +1723,6 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>1</sortorder>
-                    <drawtype>0</drawtype>
-                    <color>0000C8</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Template PgMonz</host>
-                        <key>psql.active_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
                     <sortorder>4</sortorder>
                     <drawtype>0</drawtype>
                     <color>C8C800</color>
@@ -1636,6 +1735,50 @@
                     </item>
                 </graph_item>
                 <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>00C8C8</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template PgMonz</host>
+                        <key>psql.idle_tx_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>0000C8</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template PgMonz</host>
+                        <key>psql.active_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>PostgreSQL connections ratio</name>
+            <width>900</width>
+            <height>400</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>1</ymin_type_1>
+            <ymax_type_1>1</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
                     <sortorder>0</sortorder>
                     <drawtype>0</drawtype>
                     <color>00C800</color>
@@ -1644,42 +1787,10 @@
                     <type>0</type>
                     <item>
                         <host>Template PgMonz</host>
-                        <key>psql.server_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                        <key>psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
                     </item>
                 </graph_item>
             </graph_items>
         </graph>
-	<graph>
-	  <name>PostgreSQL connections ratio</name>
-          <width>900</width>
-          <height>400</height>
-          <yaxismin>0.0000</yaxismin>
-          <yaxismax>100.0000</yaxismax>
-          <show_work_period>1</show_work_period>
-          <show_triggers>1</show_triggers>
-          <type>0</type>
-          <show_legend>1</show_legend>
-          <show_3d>0</show_3d>
-          <percent_left>0.0000</percent_left>
-          <percent_right>0.0000</percent_right>
-          <ymin_type_1>0</ymin_type_1>
-          <ymax_type_1>0</ymax_type_1>
-          <ymin_item_1>0</ymin_item_1>
-          <ymax_item_1>0</ymax_item_1>
-          <graph_items>
-            <graph_item>
-              <sortorder>0</sortorder>
-              <drawtype>0</drawtype>
-              <color>C80000</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <item>
-                <host>Template PgMonz</host>
-                <key>psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-              </item>
-            </graph_item>
-          </graph_items>
-	</graph>
     </graphs>
 </zabbix_export>
