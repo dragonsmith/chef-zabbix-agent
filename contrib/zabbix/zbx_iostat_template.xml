@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2014-04-20T08:38:25Z</date>
+    <date>2015-03-13T14:34:51Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Martian Templates</name>
         </group>
     </groups>
     <templates>
         <template>
             <template>Iostat-Disk-Utilization-Template</template>
-            <name>Iostat-Disk-Utilization-Template</name>
+            <name>Evil Martians - IOstat</name>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Martian Templates</name>
                 </group>
             </groups>
             <applications>
@@ -58,7 +58,17 @@
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <authtype>0</authtype>
-                    <filter>{#HARDDISK}:^(xvd|sd|hd|vd)[a-z]</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <conditions>
+                            <condition>
+                                <macro>{#HARDDISK}</macro>
+                                <value>^(xvd|sd|hd|vd)[a-z]</value>
+                                <operator>8</operator>
+                                <formulaid>A</formulaid>
+                            </condition>
+                        </conditions>
+                    </filter>
                     <lifetime>1</lifetime>
                     <item_prototypes>
                         <item_prototype>
