@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-03-11T11:14:27Z</date>
+    <date>2015-03-12T07:06:45Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Martian Templates</name>
         </group>
     </groups>
     <templates>
         <template>
             <template>runit_services</template>
-            <name>Runit services</name>
+            <name>Evil Martians - Runit services</name>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Martian Templates</name>
                 </group>
             </groups>
             <applications>
@@ -45,7 +45,7 @@
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
-                            <value_type>3</value_type>
+                            <value_type>0</value_type>
                             <units>%</units>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -65,7 +65,7 @@
                         <item_prototype>
                             <name>[{#RUNIT_SERVICE}] resident memory</name>
                             <type>7</type>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <key>runit_services.rsz[{#RUNIT_SERVICE}]</key>
                             <delay>30</delay>
                             <history>7</history>
@@ -77,7 +77,7 @@
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
                             <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <formula>1</formula>
+                            <formula>1024</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
                             <description>Runit service {#RUNIT_SERVICE}: resident memory size</description>
@@ -91,7 +91,7 @@
                         <item_prototype>
                             <name>[{#RUNIT_SERVICE}] virtual memory</name>
                             <type>7</type>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <key>runit_services.vsz[{#RUNIT_SERVICE}]</key>
                             <delay>30</delay>
                             <history>7</history>
@@ -103,7 +103,7 @@
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
                             <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <formula>1</formula>
+                            <formula>1024</formula>
                             <data_type>0</data_type>
                             <authtype>0</authtype>
                             <description>Runit service {#RUNIT_SERVICE}: virtual memory size</description>
@@ -161,16 +161,10 @@
                             <show_3d>0</show_3d>
                             <percent_left>0.0000</percent_left>
                             <percent_right>0.0000</percent_right>
-                            <ymin_type_1>2</ymin_type_1>
-                            <ymax_type_1>2</ymax_type_1>
-                            <ymin_item_1>
-                                <host>runit_services</host>
-                                <key>runit_services.rsz[{#RUNIT_SERVICE}]</key>
-                            </ymin_item_1>
-                            <ymax_item_1>
-                                <host>runit_services</host>
-                                <key>runit_services.rsz[{#RUNIT_SERVICE}]</key>
-                            </ymax_item_1>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
@@ -199,16 +193,10 @@
                             <show_3d>0</show_3d>
                             <percent_left>0.0000</percent_left>
                             <percent_right>0.0000</percent_right>
-                            <ymin_type_1>2</ymin_type_1>
-                            <ymax_type_1>2</ymax_type_1>
-                            <ymin_item_1>
-                                <host>runit_services</host>
-                                <key>runit_services.vsz[{#RUNIT_SERVICE}]</key>
-                            </ymin_item_1>
-                            <ymax_item_1>
-                                <host>runit_services</host>
-                                <key>runit_services.vsz[{#RUNIT_SERVICE}]</key>
-                            </ymax_item_1>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
