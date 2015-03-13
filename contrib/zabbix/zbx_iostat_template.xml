@@ -24,7 +24,7 @@
             <items>
                 <item>
                     <name>Iostat: Collect statistics</name>
-                    <type>0</type>
+                    <type>7</type>
                     <multiplier>0</multiplier>
                     <key>iostat.collect</key>
                     <delay>60</delay>
@@ -63,7 +63,7 @@
                     <item_prototypes>
                         <item_prototype>
                             <name>Disk {#HARDDISK} average queue size</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},avgqu-sz]</key>
                             <delay>60</delay>
@@ -89,7 +89,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} average requests size</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},avgrq-sz]</key>
                             <delay>60</delay>
@@ -115,7 +115,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} await</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},await]</key>
                             <delay>60</delay>
@@ -141,7 +141,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} read await</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},r_await]</key>
                             <delay>60</delay>
@@ -167,7 +167,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} read from device per second</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},rkb/s]</key>
                             <delay>60</delay>
@@ -193,7 +193,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} read operations per second</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},r/s]</key>
                             <delay>60</delay>
@@ -219,7 +219,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} read requests merge per second</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},rrqm/s]</key>
                             <delay>60</delay>
@@ -245,7 +245,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} utilization</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},util]</key>
                             <delay>60</delay>
@@ -271,7 +271,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} write await</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},w_await]</key>
                             <delay>60</delay>
@@ -297,7 +297,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} write operations per second</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},w/s]</key>
                             <delay>60</delay>
@@ -323,7 +323,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} write requests merge per second</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},wrqm/s]</key>
                             <delay>60</delay>
@@ -349,7 +349,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#HARDDISK} written to the device per second</name>
-                            <type>0</type>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>iostat.metric[{#HARDDISK},wkb/s]</key>
                             <delay>60</delay>
