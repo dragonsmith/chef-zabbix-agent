@@ -1,5 +1,9 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.8 (2015-03-14)
+
+* Many updates to PgMonz Zabbix templates disabling some items/triggers and changes to graphs.
+
 ## v1.3.7 (2015-03-13)
 
 * runit services
