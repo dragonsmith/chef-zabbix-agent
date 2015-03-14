@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-03-13T16:25:14Z</date>
+    <date>2015-03-14T08:33:49Z</date>
     <groups>
         <group>
             <name>Martian Templates</name>
@@ -30,7 +30,7 @@
                     <type>7</type>
                     <multiplier>0</multiplier>
                     <key>psql.active_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    <delay>300</delay>
+                    <delay>60</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
@@ -229,7 +229,7 @@
                     <type>7</type>
                     <multiplier>0</multiplier>
                     <key>psql.tx_committed[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    <delay>300</delay>
+                    <delay>60</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
@@ -254,7 +254,7 @@
                     <type>7</type>
                     <multiplier>0</multiplier>
                     <key>psql.server_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    <delay>300</delay>
+                    <delay>60</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
@@ -278,7 +278,7 @@
                     <type>7</type>
                     <multiplier>0</multiplier>
                     <key>psql.idle_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    <delay>300</delay>
+                    <delay>60</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
@@ -302,7 +302,7 @@
                     <type>7</type>
                     <multiplier>0</multiplier>
                     <key>psql.idle_tx_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    <delay>300</delay>
+                    <delay>60</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
@@ -326,7 +326,7 @@
                     <type>7</type>
                     <multiplier>0</multiplier>
                     <key>psql.locks_waiting[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    <delay>300</delay>
+                    <delay>60</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
@@ -426,7 +426,7 @@
                     <delay>60</delay>
                     <history>7</history>
                     <trends>90</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -471,7 +471,7 @@
                     <type>7</type>
                     <multiplier>0</multiplier>
                     <key>psql.tx_rolledback[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    <delay>300</delay>
+                    <delay>60</delay>
                     <history>7</history>
                     <trends>90</trends>
                     <status>0</status>
@@ -525,7 +525,7 @@
                     <delay>300</delay>
                     <history>7</history>
                     <trends>90</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -549,7 +549,7 @@
                     <delay>300</delay>
                     <history>7</history>
                     <trends>90</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -573,7 +573,7 @@
                     <delay>300</delay>
                     <history>7</history>
                     <trends>90</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <delta>0</delta>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -593,7 +593,7 @@
             <discovery_rules>
                 <discovery_rule>
                     <name>DB and Table Name List</name>
-                    <type>0</type>
+                    <type>7</type>
                     <key>db_table.list.discovery[{$PGPORT},{$PGROLE},{$PGDATABASE},{$PGSCRIPTDIR}]</key>
                     <delay>3600</delay>
                     <status>1</status>
@@ -947,7 +947,7 @@
                 </discovery_rule>
                 <discovery_rule>
                     <name>DB Name List</name>
-                    <type>0</type>
+                    <type>7</type>
                     <key>db.list.discovery[{$PGPORT},{$PGROLE},{$PGDATABASE},{$PGSCRIPTDIR}]</key>
                     <delay>3600</delay>
                     <status>0</status>
@@ -961,14 +961,14 @@
                     <lifetime>30</lifetime>
                     <item_prototypes>
                         <item_prototype>
-                            <name>[{#DBNAME}] Active connections</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Active connections</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_connections[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>3</value_type>
                             <delta>0</delta>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -985,11 +985,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Cache hit ratio (%)</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Cache hit ratio (%)</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.cachehit_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1010,11 +1010,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Committed transactions</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Committed transactions</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_tx_committed[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1035,8 +1035,8 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] DB Size</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] DB Size</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_size[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
                             <delay>300</delay>
@@ -1060,11 +1060,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Deadlocks</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Deadlocks</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_deadlocks[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1084,11 +1084,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Rolled back transactions</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Rolled back transactions</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_tx_rolledback[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1109,11 +1109,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Temp bytes</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Temp bytes</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_temp_bytes[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1134,11 +1134,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Tuples deleted</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Tuples deleted</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_deleted[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1159,11 +1159,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Tuples fetched</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Tuples fetched</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_fetched[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1184,11 +1184,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Tuples inserted</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Tuples inserted</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_inserted[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1209,11 +1209,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Tuples returned</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Tuples returned</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_returned[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1234,11 +1234,11 @@
                             </applications>
                         </item_prototype>
                         <item_prototype>
-                            <name>[{#DBNAME}] Tuples updated</name>
-                            <type>0</type>
+                            <name>[DB: {#DBNAME}] Tuples updated</name>
+                            <type>7</type>
                             <multiplier>0</multiplier>
                             <key>psql.db_updated[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                            <delay>300</delay>
+                            <delay>60</delay>
                             <history>7</history>
                             <trends>90</trends>
                             <status>0</status>
@@ -1293,7 +1293,7 @@
                     </trigger_prototypes>
                     <graph_prototypes>
                         <graph_prototype>
-                            <name>[{#DBNAME}] Cache Hit Ratio</name>
+                            <name>[DB: {#DBNAME}] Cache Hit Ratio</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
@@ -1312,7 +1312,7 @@
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
-                                    <drawtype>0</drawtype>
+                                    <drawtype>5</drawtype>
                                     <color>C80000</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
@@ -1325,7 +1325,7 @@
                             </graph_items>
                         </graph_prototype>
                         <graph_prototype>
-                            <name>[{#DBNAME}] DB Size</name>
+                            <name>[DB: {#DBNAME}] DB Size</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
@@ -1344,8 +1344,8 @@
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
-                                    <drawtype>0</drawtype>
-                                    <color>00C800</color>
+                                    <drawtype>1</drawtype>
+                                    <color>AB6220</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
@@ -1357,7 +1357,7 @@
                             </graph_items>
                         </graph_prototype>
                         <graph_prototype>
-                            <name>[{#DBNAME}] Deadlocks</name>
+                            <name>[DB: {#DBNAME}] Deadlocks</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
@@ -1376,7 +1376,7 @@
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
-                                    <drawtype>0</drawtype>
+                                    <drawtype>1</drawtype>
                                     <color>C80000</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
@@ -1389,51 +1389,7 @@
                             </graph_items>
                         </graph_prototype>
                         <graph_prototype>
-                            <name>[{#DBNAME}] Number of commited/rolled back transactions</name>
-                            <width>900</width>
-                            <height>200</height>
-                            <yaxismin>0.0000</yaxismin>
-                            <yaxismax>100.0000</yaxismax>
-                            <show_work_period>1</show_work_period>
-                            <show_triggers>1</show_triggers>
-                            <type>0</type>
-                            <show_legend>1</show_legend>
-                            <show_3d>0</show_3d>
-                            <percent_left>0.0000</percent_left>
-                            <percent_right>0.0000</percent_right>
-                            <ymin_type_1>0</ymin_type_1>
-                            <ymax_type_1>0</ymax_type_1>
-                            <ymin_item_1>0</ymin_item_1>
-                            <ymax_item_1>0</ymax_item_1>
-                            <graph_items>
-                                <graph_item>
-                                    <sortorder>0</sortorder>
-                                    <drawtype>0</drawtype>
-                                    <color>00C800</color>
-                                    <yaxisside>0</yaxisside>
-                                    <calc_fnc>2</calc_fnc>
-                                    <type>0</type>
-                                    <item>
-                                        <host>Template PgMonz</host>
-                                        <key>psql.db_tx_committed[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                                    </item>
-                                </graph_item>
-                                <graph_item>
-                                    <sortorder>1</sortorder>
-                                    <drawtype>0</drawtype>
-                                    <color>C80000</color>
-                                    <yaxisside>0</yaxisside>
-                                    <calc_fnc>2</calc_fnc>
-                                    <type>0</type>
-                                    <item>
-                                        <host>Template PgMonz</host>
-                                        <key>psql.db_tx_rolledback[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
-                                    </item>
-                                </graph_item>
-                            </graph_items>
-                        </graph_prototype>
-                        <graph_prototype>
-                            <name>[{#DBNAME}] Temp file size</name>
+                            <name>[DB: {#DBNAME}] Temp file size</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
@@ -1452,7 +1408,7 @@
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
-                                    <drawtype>0</drawtype>
+                                    <drawtype>1</drawtype>
                                     <color>00C800</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
@@ -1460,6 +1416,50 @@
                                     <item>
                                         <host>Template PgMonz</host>
                                         <key>psql.db_temp_bytes[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                        <graph_prototype>
+                            <name>[DB {#DBNAME}] commited/rolled back transactions</name>
+                            <width>900</width>
+                            <height>200</height>
+                            <yaxismin>0.0000</yaxismin>
+                            <yaxismax>100.0000</yaxismax>
+                            <show_work_period>1</show_work_period>
+                            <show_triggers>1</show_triggers>
+                            <type>0</type>
+                            <show_legend>1</show_legend>
+                            <show_3d>0</show_3d>
+                            <percent_left>0.0000</percent_left>
+                            <percent_right>0.0000</percent_right>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <drawtype>1</drawtype>
+                                    <color>C80000</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template PgMonz</host>
+                                        <key>psql.db_tx_rolledback[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>0</sortorder>
+                                    <drawtype>1</drawtype>
+                                    <color>00C800</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template PgMonz</host>
+                                        <key>psql.db_tx_committed[{$PGPORT},{$PGROLE},{$PGDATABASE},{#DBNAME}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -1529,31 +1529,11 @@
                 <screen>
                     <name>PostgreSQL screen</name>
                     <hsize>1</hsize>
-                    <vsize>2</vsize>
+                    <vsize>3</vsize>
                     <screen_items>
                         <screen_item>
                             <resourcetype>0</resourcetype>
-                            <width>500</width>
-                            <height>100</height>
-                            <x>0</x>
-                            <y>0</y>
-                            <colspan>1</colspan>
-                            <rowspan>1</rowspan>
-                            <elements>0</elements>
-                            <valign>0</valign>
-                            <halign>0</halign>
-                            <style>0</style>
-                            <dynamic>0</dynamic>
-                            <sort_triggers>0</sort_triggers>
-                            <resource>
-                                <name>Checkpoint count</name>
-                                <host>Template PgMonz</host>
-                            </resource>
-                            <max_columns>3</max_columns>
-                        </screen_item>
-                        <screen_item>
-                            <resourcetype>0</resourcetype>
-                            <width>500</width>
+                            <width>900</width>
                             <height>100</height>
                             <x>0</x>
                             <y>1</y>
@@ -1566,7 +1546,47 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <name>Connection count</name>
+                                <name>[PostgreSQL] Committed vs. Rolledback TX</name>
+                                <host>Template PgMonz</host>
+                            </resource>
+                            <max_columns>3</max_columns>
+                        </screen_item>
+                        <screen_item>
+                            <resourcetype>0</resourcetype>
+                            <width>900</width>
+                            <height>200</height>
+                            <x>0</x>
+                            <y>0</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <style>0</style>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <resource>
+                                <name>[PostgreSQL] Connections</name>
+                                <host>Template PgMonz</host>
+                            </resource>
+                            <max_columns>3</max_columns>
+                        </screen_item>
+                        <screen_item>
+                            <resourcetype>0</resourcetype>
+                            <width>900</width>
+                            <height>100</height>
+                            <x>0</x>
+                            <y>2</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <style>0</style>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <resource>
+                                <name>[PostgreSQL] Checkpoint count</name>
                                 <host>Template PgMonz</host>
                             </resource>
                             <max_columns>3</max_columns>
@@ -1616,7 +1636,7 @@
         <trigger>
             <expression>{Template PgMonz:proc.num[,postgres,,].last(0)}=0</expression>
             <name>PostgreSQL process is not running.</name>
-            <status>0</status>
+            <status>1</status>
             <priority>5</priority>
             <type>0</type>
         </trigger>
@@ -1630,14 +1650,14 @@
         <trigger>
             <expression>{Template PgMonz:psql.slow_queries[{$PGPORT},{$PGROLE},{$PGDATABASE},{$PGSLOWQUERY_THRESHOLD}].last(0)}&gt;{$PGSLOWQUERY_THRESHOLD}</expression>
             <name>Too many slow queries</name>
-            <status>0</status>
+            <status>1</status>
             <priority>3</priority>
             <type>0</type>
         </trigger>
     </triggers>
     <graphs>
         <graph>
-            <name>Checkpoint count</name>
+            <name>[PostgreSQL] Checkpoint count</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -1656,7 +1676,7 @@
             <graph_items>
                 <graph_item>
                     <sortorder>1</sortorder>
-                    <drawtype>0</drawtype>
+                    <drawtype>2</drawtype>
                     <color>00C800</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
@@ -1668,7 +1688,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
+                    <drawtype>2</drawtype>
                     <color>C80000</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
@@ -1681,7 +1701,7 @@
             </graph_items>
         </graph>
         <graph>
-            <name>Connection count</name>
+            <name>[PostgreSQL] Committed vs. Rolledback TX</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -1700,44 +1720,55 @@
             <graph_items>
                 <graph_item>
                     <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
-                    <color>00C800</color>
+                    <drawtype>5</drawtype>
+                    <color>00B800</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
                         <host>Template PgMonz</host>
-                        <key>psql.server_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                        <key>psql.tx_committed[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
                     </item>
                 </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>5</drawtype>
+                    <color>E60000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template PgMonz</host>
+                        <key>psql.tx_rolledback[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>[PostgreSQL] Connections</name>
+            <width>900</width>
+            <height>300</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>1</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>1</ymin_type_1>
+            <ymax_type_1>2</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>
+                <host>Template PgMonz</host>
+                <key>psql.server_maxcon[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+            </ymax_item_1>
+            <graph_items>
                 <graph_item>
                     <sortorder>2</sortorder>
                     <drawtype>0</drawtype>
-                    <color>C800C8</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Template PgMonz</host>
-                        <key>psql.idle_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
-                    <sortorder>4</sortorder>
-                    <drawtype>0</drawtype>
-                    <color>C8C800</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Template PgMonz</host>
-                        <key>psql.locks_waiting[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
-                    <sortorder>3</sortorder>
-                    <drawtype>0</drawtype>
-                    <color>00C8C8</color>
+                    <color>FFA200</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
@@ -1747,47 +1778,39 @@
                     </item>
                 </graph_item>
                 <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>F6001D</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template PgMonz</host>
+                        <key>psql.locks_waiting[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>637593</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template PgMonz</host>
+                        <key>psql.idle_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
                     <sortorder>1</sortorder>
                     <drawtype>0</drawtype>
-                    <color>0000C8</color>
+                    <color>208F03</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
                         <host>Template PgMonz</host>
                         <key>psql.active_connections[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
-                    </item>
-                </graph_item>
-            </graph_items>
-        </graph>
-        <graph>
-            <name>PostgreSQL connections ratio</name>
-            <width>900</width>
-            <height>400</height>
-            <yaxismin>0.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
-            <show_work_period>1</show_work_period>
-            <show_triggers>1</show_triggers>
-            <type>0</type>
-            <show_legend>1</show_legend>
-            <show_3d>0</show_3d>
-            <percent_left>0.0000</percent_left>
-            <percent_right>0.0000</percent_right>
-            <ymin_type_1>1</ymin_type_1>
-            <ymax_type_1>1</ymax_type_1>
-            <ymin_item_1>0</ymin_item_1>
-            <ymax_item_1>0</ymax_item_1>
-            <graph_items>
-                <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
-                    <color>00C800</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Template PgMonz</host>
-                        <key>psql.server_connections_ratio[{$PGPORT},{$PGROLE},{$PGDATABASE}]</key>
                     </item>
                 </graph_item>
             </graph_items>
