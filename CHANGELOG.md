@@ -1,11 +1,5 @@
 # zabbix-agent cookbook CHANGELOG
 
-## v1.3.8 (2015-03-13)
-
-* UserParameter psql.available_connections for PG monitoring.
-* Some triggers & in Zabbix PG template were disabled.
-* New graphs for Zabbix PG template.
-
 ## v1.3.7 (2015-03-13)
 
 * runit services
