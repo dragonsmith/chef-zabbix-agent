@@ -1,8 +1,13 @@
 # zabbix-agent cookbook CHANGELOG
 
-## v1.3.8 (2015-03-14)
+## v1.3.9 (2015-03-14)
+
+* iostat data monitoring
+
+## v1.3.8 (2015-03-13)
 
 * Many updates to PgMonz Zabbix templates disabling some items/triggers and changes to graphs.
+* iostat
 
 ## v1.3.7 (2015-03-13)
 

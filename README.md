@@ -52,6 +52,18 @@ Returns RSS value for the oldest process that matches your regex *multiplied by 
 
 Bunch of parameters with autodiscovering for monitor CPU and memory usage by active services, running over runit.
 
+## iostat
+
+`iostat.discovery`
+
+`iostat.collect`
+
+`iostat.metric[*]`
+
+Disk utilization via iostat.
+
+Initially imported from [zabbix-extensions](lesovsky/zabbix-extensions) by [Alexey Lesovsky](https://github.com/lesovsky)
+
 # Sponsor
 
 Sponsored by [Evil Martians](http://evilmartians.com)
@@ -59,8 +71,9 @@ Sponsored by [Evil Martians](http://evilmartians.com)
 # License and Author
 
 Kirill Kouznetsov (agon.smith@gmail.com)
+Maxim Filatov (bregor@evilmartians.com)
 
-Copyright (C) 2012-2014 Kirill Kouznetsov
+Copyright (C) 2012-2015 Evil Martians
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
