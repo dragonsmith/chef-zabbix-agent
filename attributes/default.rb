@@ -7,7 +7,8 @@ case platform
 when 'debian', 'ubuntu'
   set_unless['zabbix']['service'] = 'zabbix-agent'
   default['zabbix']['package'] = 'zabbix-agent'
-  default['zabbix']['agent_conf'] = '/etc/zabbix/zabbix_agentd.conf'
+  default['zabbix']['conf_dir'] = '/etc/zabbix'
+  default['zabbix']['agent_conf'] = "#{node['zabbix']['conf_dir']}/zabbix_agentd.conf"
 end
 
 default['zabbix']['version'] = '2.4'
