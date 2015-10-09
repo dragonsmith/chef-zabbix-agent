@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-12.04
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    data_bags_path: "test/data_bags"
+    encrypted_data_bag_secret_key_path: "test/encrypted_data_bag_secret"
+    driver:
+      vm_hostname: zabbix-agent-cookbook-test.example.com
+    run_list:
+      - recipe[apt]
+      - recipe[zabbix_agent_test]
+      - recipe[zabbix_agent_test::redis]
