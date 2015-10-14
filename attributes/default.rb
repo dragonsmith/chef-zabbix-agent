@@ -18,3 +18,5 @@ default['zabbix']['agent_pid_dir'] = '/var/run/zabbix'
 
 default['zabbix']['server_name'] = 'zabbix.example.com'
 default['zabbix']['agent_debuglevel'] = '3'
+
+default['zabbix']['redis_config'] = '/etc/redis/redis.conf'

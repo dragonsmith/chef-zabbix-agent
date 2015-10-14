@@ -1,0 +1,17 @@
+
+# Memory
+UserParameter=redis.mem.used,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> info | /usr/bin/awk 'BEGIN {FS="[ ,:=]"} /used_memory:/{print $2}'
+UserParameter=redis.mem.max,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> --raw config get maxmemory | /usr/bin/tail -n 1
+
+# Operations Per Second
+UserParameter=redis.ops.per.second,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> info | /usr/bin/awk 'BEGIN {FS="[ ,:=]"} /instantaneous_ops_per_sec:/{print $2}'
+
+# Total number of stored keys
+UserParameter=redis.keys.total,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> info | /usr/bin/awk 'BEGIN {FS="[ ,:=]"; keys=0} /keys=/{keys+=$3} END {print keys}'
+UserParameter=redis.keyspace.misses,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> info | /usr/bin/awk 'BEGIN {FS="[ ,:=]"} /keyspace_misses:/{print $2}'
+
+# Connections
+UserParameter=redis.connections.current,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> info | /usr/bin/awk 'BEGIN {FS="[ ,:=]"} /connected_clients:/{print $2}'
+UserParameter=redis.connections.max,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> --raw config get maxclients | /usr/bin/tail -n 1
+UserParameter=redis.blocked.clients,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> info | /usr/bin/awk 'BEGIN {FS="[ ,:=]"} /blocked_clients:/{print $2}'
+UserParameter=redis.rejected.connections,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> info | /usr/bin/awk 'BEGIN {FS="[ ,:=]"} /rejected_connections:/{print $2}'
