@@ -1,0 +1,10 @@
+name             'zabbix_agent_test'
+maintainer       'Kirill Kouznetsov'
+maintainer_email 'agon.smith@gmail.com'
+license          'Apache 2.0'
+description      'Performs test of zabbix-agent cookbook'
+long_description 'Performs test of zabbix-agent cookbook'
+version          '0.0.1'
+
+depends 'redis2'
+depends 'zabbix-agent'
