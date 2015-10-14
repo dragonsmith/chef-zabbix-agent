@@ -20,9 +20,9 @@ template "#{node['zabbix']['conf_dir']}/agent-conf.d/redis-custom-user-parameter
   variables(
     lazy do
       {
-        redis_password: get_redis_password(node['zabbix']['redis_conf']),
-        redis_host: get_redis_host(node['zabbix']['redis_conf']),
-        redis_port: get_redis_port(node['zabbix']['redis_conf'])
+        redis_password: get_redis_password(node['zabbix']['redis_config']),
+        redis_host: get_redis_host(node['zabbix']['redis_config']),
+        redis_port: get_redis_port(node['zabbix']['redis_config'])
       }
     end
   )
