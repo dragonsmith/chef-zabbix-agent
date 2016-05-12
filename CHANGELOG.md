@@ -1,5 +1,13 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.13 (2016-05-12)
+
+* not_if tiny syntax fix.
+
+## v1.3.12 (2016-05-12)
+
+* do not add custom apt repo on Ubuntu Xenial 16.04
+
 ## v1.3.9 (2015-03-14)
 
 * iostat data monitoring
