@@ -8,6 +8,7 @@ apt_repository 'zabbix' do
   distribution node['lsb']['codename']
   components ['main']
   key 'http://repo.zabbix.com/zabbix-official-repo.key'
+  not_if node['platform_version'].to_i >= 16
 end
 
 package node['zabbix']['package'] do
@@ -19,7 +20,7 @@ listen_ip = if IPAddress.valid?(node['zabbix']['listen'])
             elsif %w(any all).include?(node['zabbix']['listen'])
               '0.0.0.0'
             else
-              node['network']['interfaces'][node['zabbix']['listen']]['addresses'].select { |address, data| data['family'] == 'inet' }.first.first
+              node['network']['interfaces'][node['zabbix']['listen']]['addresses'].find { |address, data| data['family'] == 'inet' }.first
             end
 
 template node['zabbix']['agent_conf'] do
