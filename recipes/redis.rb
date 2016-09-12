@@ -28,4 +28,9 @@ template "#{node['zabbix']['conf_dir']}/agent-conf.d/redis-custom-user-parameter
   )
 end
 
+cron 'write zabbix_key with unixtime to redis' do
+  minute '*/1'
+  command "/usr/bin/redis-cli -a #{get_redis_password(node['zabbix']['redis_config'])} -h #{get_redis_host(node['zabbix']['redis_config'])} -p #{get_redis_port(node['zabbix']['redis_config'])} set zabbix_key #{Time.now.to_i}"
+end
+
 # zabbix_agent_redis 'main'
