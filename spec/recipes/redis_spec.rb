@@ -12,4 +12,8 @@ describe 'zabbix-agent::redis' do
   it 'Creates zabbix agent custom config file' do
     is_expected.to create_template('/etc/zabbix/agent-conf.d/redis-custom-user-parameters.conf')
   end
+
+  it 'Creates cron task that writes unixtime to zabbix_key to redis' do
+    is_expected.to create_cron('write zabbix_key with unixtime to redis')
+  end
 end
