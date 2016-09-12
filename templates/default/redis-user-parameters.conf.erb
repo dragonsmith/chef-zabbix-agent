@@ -17,4 +17,4 @@ UserParameter=redis.blocked.clients,/usr/bin/redis-cli -a <%= @redis_password %>
 UserParameter=redis.rejected.connections,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> info | /usr/bin/awk 'BEGIN {FS="[ ,:=]"} /rejected_connections:/{print $2}'
 
 # Write test
-UserParameter=redis.zabbix.get,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> get zabbix_key
+UserParameter=redis.zabbix.get,/usr/bin/redis-cli -a <%= @redis_password %> -h <%= @redis_host %> -p <%= @redis_port %> get zabbix_key > /dev/null
