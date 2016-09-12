@@ -1,5 +1,13 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v1.3.15 (2016-09-13)
+
+* Hotfixes. Do not hurry.
+
+## v1.3.14 (2016-09-13)
+
+* User Parameter redis.zabbix.get was added.
+
 ## v1.3.13 (2016-05-12)
 
 * not_if tiny syntax fix.
