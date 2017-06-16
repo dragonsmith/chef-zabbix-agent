@@ -1,5 +1,9 @@
 # zabbix-agent cookbook CHANGELOG
 
+## v0.3.16 (2017-06-17)
+
+* Making this cookbook compatible with Chef 13.
+
 ## v1.3.15 (2016-09-13)
 
 * Hotfixes. Do not hurry.

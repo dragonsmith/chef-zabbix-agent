@@ -3,7 +3,7 @@
 # Attribute:: default
 #
 
-case platform
+case node['platform']
 when 'debian', 'ubuntu'
   set_unless['zabbix']['service'] = 'zabbix-agent'
   default['zabbix']['package'] = 'zabbix-agent'
